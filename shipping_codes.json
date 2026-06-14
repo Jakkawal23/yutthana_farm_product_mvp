@@ -1,0 +1,14 @@
+[
+  {
+    "code": "FREESHIP",
+    "discountType": "free",
+    "value": 0,
+    "description": "จัดส่งฟรี (ค่าส่ง 0 บาท)"
+  },
+  {
+    "code": "SHIP50",
+    "discountType": "discount",
+    "value": 50,
+    "description": "ส่วนลดค่าส่ง 50 บาท"
+  }
+]

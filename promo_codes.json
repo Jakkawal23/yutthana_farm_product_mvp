@@ -1,0 +1,21 @@
+[
+  {
+    "code": "YUTTHANA10",
+    "discountType": "percentage",
+    "value": 10,
+    "description": "ลดราคาสินค้า 10%"
+  },
+  {
+    "code": "AVOCADO50",
+    "discountType": "fixed",
+    "value": 50,
+    "description": "ลดราคาสินค้า 50 บาท"
+  },
+  {
+    "code": "WELCOME100",
+    "discountType": "fixed",
+    "value": 100,
+    "description": "ลดราคาสินค้า 100 บาท (ยอดขั้นต่ำ 500 บาท)",
+    "minPurchase": 500
+  }
+]
