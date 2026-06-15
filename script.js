@@ -10,31 +10,29 @@
    3. Copy LIFF ID มาวางแทน "YOUR_LIFF_ID_HERE"
    ────────────────────────────────────────────── */
 const LIFF_CONFIG = {
-  liffId: "YOUR_LIFF_ID_HERE", // ← แก้ตรงนี้ !!
+  liffId: typeof CONFIG !== 'undefined' ? CONFIG.LIFF_ID : "YOUR_LIFF_ID_HERE",
 };
 
 async function loadEnv() {
+  if (typeof CONFIG !== 'undefined') {
+    LIFF_CONFIG.liffId = CONFIG.LIFF_ID;
+    return;
+  }
   try {
     const isSubdir = window.location.pathname.includes('/products/');
-    const envPath = isSubdir ? '../.env' : '.env';
-    const res = await fetch(envPath);
-    if (res.ok) {
-      const text = await res.text();
-      const env = {};
-      text.split('\n').forEach(line => {
-        const parts = line.split('=');
-        if (parts.length >= 2) {
-          const key = parts[0].trim();
-          const value = parts.slice(1).join('=').trim().replace(/^["']|["']$/g, '');
-          env[key] = value;
-        }
-      });
-      if (env.LIFF_ID) {
-        LIFF_CONFIG.liffId = env.LIFF_ID;
-      }
+    const configPath = isSubdir ? '../config.js' : 'config.js';
+    await new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = configPath;
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+    if (typeof CONFIG !== 'undefined') {
+      LIFF_CONFIG.liffId = CONFIG.LIFF_ID;
     }
   } catch (e) {
-    console.warn('Could not load .env file:', e);
+    console.warn('Could not load config.js dynamically:', e);
   }
 }
 
