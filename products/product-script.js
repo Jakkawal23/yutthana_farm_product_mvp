@@ -122,7 +122,7 @@ async function sendInterest(productOrName) {
 
   try {
     const msg = `🌿 สนใจสั่งซื้อต้นไม้: ${productName}${product ? `\n💰 ราคา: ฿${product.price.toLocaleString()}/ต้น` : ''}\n\nกรุณาติดต่อแอดมินเพื่อสั่งซื้อ 😊`;
-    
+
     if (product) Cart.add(product);
     else Cart.addById(productName);
 
@@ -609,26 +609,29 @@ function hydrateProductDetailPage(product) {
   initSlider('slider-track', 'slider-dots');
 }
 
-window.handleAddToCartClick = async function (productId) {
+window.handleAddToCartClick = function (productId) {
   const p = PRODUCTS.find(prod => prod.id === productId);
-  if (!p) return;
+  if (p) {
+    Cart.add(p, 1);
+    showToast('🛒 เพิ่มลงในตะกร้าเรียบร้อยแล้ว!');
+  }
+};
 
-  const btn = document.getElementById('btn-order');
-  if (btn) { btn.disabled = true; btn.textContent = '⏳ กำลังส่ง...'; }
+window.contactAdmin = async function (subject) {
+  const btn = document.getElementById('btn-chat');
+  if (btn) { btn.disabled = true; }
+
+  const msgText = subject
+    ? `🌿 สนใจสั่งซื้อ: ${subject}\n\nกรุณาติดต่อแอดมินเพื่อสั่งซื้อ 😊`
+    : `🌿 สวัสดีครับ ติดต่อแอดมินสวนยุทธนา ฟาร์ม ดอยผาแดง\n\nสนใจสอบถามข้อมูลต้นอโวคาโดครับ 😊`;
 
   try {
-    // Add to cart first
-    Cart.add(p, 1);
-
-    // Build interest message
-    const msg = `🌿 สนใจสั่งซื้อ: ${p.nameTh} (${p.variety})\n💰 ราคา: ฿${p.price.toLocaleString()}/ต้น\n\nกรุณาติดต่อแอดมินเพื่อสั่งซื้อ 😊`;
-
-    const result = await sendMessageToLine(msg);
+    const result = await sendMessageToLine(msgText);
     if (result === 'sent') {
-      showToast('✅ ส่งข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
+      showToast('✅ ส่งข้อความสนใจสินค้าสำเร็จ!');
       if (liff.isInClient()) setTimeout(() => liff.closeWindow(), 1800);
     } else if (result === 'shared') {
-      showToast('✅ แชร์ข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
+      showToast('✅ แชร์ข้อความสนใจสินค้าสำเร็จ!');
     } else if (result === 'copied') {
       showToast('📋 คัดลอกแล้ว กำลังเปิดแชท LINE แอดมิน...');
       const oaLink = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_OA_LINK : 'https://line.me/R/ti/p/@yutthanafarm';
@@ -639,35 +642,14 @@ window.handleAddToCartClick = async function (productId) {
       // Waiting for login redirect
     } else {
       const lineName = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_NAME : 'Yutthana Farm';
-      showToast(`🛒 เพิ่มในตะกร้าแล้ว (กรุณาติดต่อ LINE: ${lineName})`);
+      showToast(`📞 กรุณาติดต่อ LINE: ${lineName}`);
     }
   } catch (err) {
-    console.error('[handleAddToCartClick]', err);
-    showToast('🛒 เพิ่มในตะกร้าแล้ว (กรุณาติดต่อแอดมินโดยตรง)');
+    console.error('[contactAdmin]', err);
+    const lineName = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_NAME : 'Yutthana Farm';
+    showToast(`📞 กรุณาติดต่อ LINE: ${lineName}`);
   } finally {
-    if (btn) {
-      btn.disabled = false;
-      btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> เพิ่มลงในตะกร้า`;
-    }
-  }
-};
-
-window.contactAdmin = async function (subject) {
-  const ok = await initLiff();
-  const msgText = subject
-    ? `🌿 สวัสดีครับ ติดต่อแอดมินสวนยุทธนา ฟาร์ม\n📋 เรื่อง: สนใจ${subject}\n\nรบกวนสอบถามรายละเอียดเพิ่มเติมครับ 🙏`
-    : `🌿 สวัสดีครับ ติดต่อแอดมินสวนยุทธนา ฟาร์ม ดอยผาแดง\n\nสนใจสอบถามข้อมูลต้นอโวคาโดครับ 😊`;
-  try {
-    if (ok && liff.isLoggedIn()) {
-      await liff.sendMessages([{ type: 'text', text: msgText }]);
-      showToast('✅ ส่งข้อความหาแอดมินเรียบร้อยแล้ว');
-      if (liff.isInClient()) setTimeout(() => liff.closeWindow(), 1800);
-    } else {
-      showToast('📞 LINE: Yutthana Farm');
-    }
-  } catch (err) {
-    console.error('Failed to contact admin via LIFF:', err);
-    showToast('📞 LINE: Yutthana Farm');
+    if (btn) { btn.disabled = false; }
   }
 };
 
