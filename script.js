@@ -844,22 +844,22 @@ window.sendCheckoutMessage = async function () {
   const defaultAddr = AddressManager.getDefault();
 
   // Build message
-  let msg = `🌿 ยุทธนา ฟาร์ม — ใบสั่งซื้อ\n`;
-  msg += `━━━━━━━━━━━━━━━━━\n`;
+  let msg = `ยุทธนา ฟาร์ม — ใบสั่งซื้อ\n`;
+  msg += `━━━━━━━━━━━\n`;
   items.forEach((item, i) => {
     const qty = item.quantity || 1;
     msg += `${i + 1}. ${item.nameTh} (${item.variety})\n   ฿${item.price.toLocaleString()} × ${qty} = ฿${(item.price * qty).toLocaleString()}\n`;
   });
-  msg += `━━━━━━━━━━━━━━━━━\n`;
+  msg += `━━━━━━━━━━━\n`;
   msg += `💰 ยอดรวมสินค้า: ฿${subtotal.toLocaleString()}\n`;
   if (discount > 0) msg += `🏷️ ส่วนลด (${promo?.code}): -฿${discount.toLocaleString()}\n`;
   msg += `🚚 ค่าจัดส่ง${shipCode ? ` (${shipCode.code})` : ''}: ${shipping === 0 ? 'ฟรี!' : `฿${shipping.toLocaleString()}`}\n`;
-  msg += `━━━━━━━━━━━━━━━━━\n`;
+  msg += `━━━━━━━━━━━\n`;
   msg += `✅ ยอดรวมทั้งสิ้น: ฿${total.toLocaleString()}\n`;
   if (defaultAddr) {
     msg += `\n📍 ที่อยู่จัดส่ง:\n${defaultAddr.name} ${defaultAddr.phone}\n${defaultAddr.address}\n`;
   }
-  msg += `\nกรุณาตอบกลับเพื่อยืนยันการสั่งซื้อ 😊`;
+  msg += `\nรอแอดมินตอบกลับเพื่อยืนยันการสั่งซื้อ`;
 
   try {
     const result = await sendMessageToLine(msg);

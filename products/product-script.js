@@ -609,11 +609,46 @@ function hydrateProductDetailPage(product) {
   initSlider('slider-track', 'slider-dots');
 }
 
-window.handleAddToCartClick = function (productId) {
+window.handleAddToCartClick = async function (productId) {
   const p = PRODUCTS.find(prod => prod.id === productId);
-  if (p) {
+  if (!p) return;
+
+  const btn = document.getElementById('btn-order');
+  if (btn) { btn.disabled = true; btn.textContent = '⏳ กำลังส่ง...'; }
+
+  try {
+    // Add to cart first
     Cart.add(p, 1);
-    showToast('🛒 เพิ่มลงในตะกร้าเรียบร้อยแล้ว!');
+
+    // Build interest message
+    const msg = `🌿 สนใจสั่งซื้อ: ${p.nameTh} (${p.variety})\n💰 ราคา: ฿${p.price.toLocaleString()}/ต้น\n\nกรุณาติดต่อแอดมินเพื่อสั่งซื้อ 😊`;
+
+    const result = await sendMessageToLine(msg);
+    if (result === 'sent') {
+      showToast('✅ ส่งข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
+      if (liff.isInClient()) setTimeout(() => liff.closeWindow(), 1800);
+    } else if (result === 'shared') {
+      showToast('✅ แชร์ข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
+    } else if (result === 'copied') {
+      showToast('📋 คัดลอกแล้ว กำลังเปิดแชท LINE แอดมิน...');
+      const oaLink = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_OA_LINK : 'https://line.me/R/ti/p/@yutthanafarm';
+      setTimeout(() => {
+        liff.openWindow({ url: oaLink, external: false });
+      }, 1500);
+    } else if (result === 'logging_in') {
+      // Waiting for login redirect
+    } else {
+      const lineName = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_NAME : 'Yutthana Farm';
+      showToast(`🛒 เพิ่มในตะกร้าแล้ว (กรุณาติดต่อ LINE: ${lineName})`);
+    }
+  } catch (err) {
+    console.error('[handleAddToCartClick]', err);
+    showToast('🛒 เพิ่มในตะกร้าแล้ว (กรุณาติดต่อแอดมินโดยตรง)');
+  } finally {
+    if (btn) {
+      btn.disabled = false;
+      btn.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg> เพิ่มลงในตะกร้า`;
+    }
   }
 };
 
