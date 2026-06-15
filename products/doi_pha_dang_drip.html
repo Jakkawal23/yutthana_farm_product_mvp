@@ -178,10 +178,10 @@
                 document.querySelectorAll('#options-size .option-chip').forEach(c => c.classList.remove('active'));
                 chip.classList.add('active');
                 selectedSize = chip.dataset.val;
-                
+
                 const addPrice = parseInt(chip.dataset.price || 0);
                 const finalPrice = basePrice + addPrice;
-                
+
                 document.getElementById('display-price').textContent = '฿' + finalPrice.toLocaleString();
                 document.getElementById('btn-order-price').textContent = '฿' + finalPrice.toLocaleString();
             });
@@ -197,7 +197,7 @@
 
             const variant = JSON.parse(JSON.stringify(baseProduct));
             variant.selectedOptions = { size: selectedSize };
-            
+
             // Calculate final price and weight
             const sizeOption = variant.options.find(o => o.id === 'size').choices.find(c => c.id === selectedSize);
             variant.price = basePrice + sizeOption.priceAdd;

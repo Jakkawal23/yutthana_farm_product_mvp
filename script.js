@@ -203,7 +203,7 @@ const Cart = {
     const items = this.getAll();
     const subtotal = this.subtotal();
     let discount = 0;
-    
+
     // Validate Promo Code
     let promo = this.getAppliedPromo();
     if (promo) {
@@ -224,7 +224,7 @@ const Cart = {
     // Calculate Promo Discount based on applicable groups
     if (promo && !promo._error) {
       const isApplicable = (item) => promo.applicableGroups.includes('all') || promo.applicableGroups.some(g => (item.groups || []).includes(g));
-      
+
       const applicableSubtotal = items.reduce((sum, item) => {
         if (isApplicable(item)) return sum + (item.price * item.quantity);
         return sum;
@@ -244,9 +244,9 @@ const Cart = {
     const rateTier = shippingRates.find(r => totalWeight >= r.minWeight && totalWeight <= r.maxWeight);
     let baseShipping = rateTier ? rateTier.rate : 150; // default to 150 if not found
     if (items.length === 0) baseShipping = 0;
-    
+
     let shipping = baseShipping;
-    
+
     // Validate Shipping Code
     let shipCode = this.getAppliedShipping();
     if (shipCode) {
@@ -570,27 +570,27 @@ function renderCartPanel() {
     const product = PRODUCTS.find(p => p.id === item.id) || item;
     const imgUrl = getRelativePath(product.imageCover || item.imageCover);
     const qty = item.quantity || 1;
-    
+
     // Check if promo applies
     const isApplicable = promo && !promo._error && (promo.applicableGroups.includes('all') || promo.applicableGroups.some(g => (item.groups || []).includes(g)));
-    
+
     let priceHtml = `฿${(item.price || 0).toLocaleString()}`;
     if (isApplicable) {
-       if (promo.discountType === 'percentage') {
-         const discountedPrice = item.price - Math.round(item.price * promo.value / 100);
-         priceHtml = `<s style="color:var(--color-text-light);font-size:0.85em;">฿${item.price.toLocaleString()}</s> <span style="color:var(--color-primary);margin-left:4px;">฿${discountedPrice.toLocaleString()}</span>`;
-       } else {
-         priceHtml += ` <span style="color:var(--color-primary);font-size:0.85em;margin-left:4px;">(ร่วมรายการลด)</span>`;
-       }
+      if (promo.discountType === 'percentage') {
+        const discountedPrice = item.price - Math.round(item.price * promo.value / 100);
+        priceHtml = `<s style="color:var(--color-text-light);font-size:0.85em;">฿${item.price.toLocaleString()}</s> <span style="color:var(--color-primary);margin-left:4px;">฿${discountedPrice.toLocaleString()}</span>`;
+      } else {
+        priceHtml += ` <span style="color:var(--color-primary);font-size:0.85em;margin-left:4px;">(ร่วมรายการลด)</span>`;
+      }
     }
 
     return `
     <div class="cart-item" id="cart-item-${item.cartItemId || item.id}">
       <div class="cart-item__img">
         ${imgUrl
-          ? `<img src="${imgUrl}" alt="${item.nameTh}" onerror="this.outerHTML='<div class=&quot;cart-item__emoji-fallback&quot;>${item.emoji || '🌿'}</div>'">`
-          : `<div class="cart-item__emoji-fallback">${item.emoji || '🌿'}</div>`
-        }
+        ? `<img src="${imgUrl}" alt="${item.nameTh}" onerror="this.outerHTML='<div class=&quot;cart-item__emoji-fallback&quot;>${item.emoji || '🌿'}</div>'">`
+        : `<div class="cart-item__emoji-fallback">${item.emoji || '🌿'}</div>`
+      }
       </div>
       <div class="cart-item__info">
         <div class="cart-item__name">${item.nameTh}</div>
@@ -615,30 +615,30 @@ function renderCartPanel() {
       <div class="cart-code-row">
         <label class="cart-code-label">🏷️ โค้ดส่วนลดสินค้า</label>
         ${currentAppliedPromo
-          ? `<div class="cart-code-applied ${currentAppliedPromo._error ? 'cart-code-applied--error' : ''}" style="${currentAppliedPromo._error ? 'border-color: #e74c3c; background-color: #fdf2f2;' : ''}">
+      ? `<div class="cart-code-applied ${currentAppliedPromo._error ? 'cart-code-applied--error' : ''}" style="${currentAppliedPromo._error ? 'border-color: #e74c3c; background-color: #fdf2f2;' : ''}">
                <span class="cart-code-applied__tag">${currentAppliedPromo._error ? '❌' : '✅'} ${currentAppliedPromo.code}</span>
                <span class="cart-code-applied__desc" style="${currentAppliedPromo._error ? 'color: #e74c3c;' : ''}">${currentAppliedPromo._error || currentAppliedPromo.description}</span>
                <button class="cart-code-applied__remove" onclick="removePromoCode()">✕</button>
              </div>`
-          : `<div class="cart-code-input-row">
+      : `<div class="cart-code-input-row">
                <input type="text" id="promo-code-input" class="cart-code-input" placeholder="ใส่โค้ดส่วนลด..." />
                <button class="cart-code-apply-btn" onclick="applyPromoCode()">ใช้โค้ด</button>
              </div>`
-        }
+    }
       </div>
       <div class="cart-code-row">
         <label class="cart-code-label">🚚 โค้ดส่วนลดค่าส่ง</label>
         ${currentAppliedShip
-          ? `<div class="cart-code-applied ${currentAppliedShip._error ? 'cart-code-applied--error' : ''}" style="${currentAppliedShip._error ? 'border-color: #e74c3c; background-color: #fdf2f2;' : ''}">
+      ? `<div class="cart-code-applied ${currentAppliedShip._error ? 'cart-code-applied--error' : ''}" style="${currentAppliedShip._error ? 'border-color: #e74c3c; background-color: #fdf2f2;' : ''}">
                <span class="cart-code-applied__tag">${currentAppliedShip._error ? '❌' : '✅'} ${currentAppliedShip.code}</span>
                <span class="cart-code-applied__desc" style="${currentAppliedShip._error ? 'color: #e74c3c;' : ''}">${currentAppliedShip._error || currentAppliedShip.description}</span>
                <button class="cart-code-applied__remove" onclick="removeShippingCode()">✕</button>
              </div>`
-          : `<div class="cart-code-input-row">
+      : `<div class="cart-code-input-row">
                <input type="text" id="ship-code-input" class="cart-code-input" placeholder="ใส่โค้ดค่าส่ง..." />
                <button class="cart-code-apply-btn" onclick="applyShippingCode()">ใช้โค้ด</button>
              </div>`
-        }
+    }
       </div>
     </div>
   `;
@@ -652,15 +652,15 @@ function renderCartPanel() {
         <button class="cart-address-manage-btn" onclick="renderAddressPanel();openPanel('address-panel');">จัดการที่อยู่</button>
       </div>
       ${defaultAddr
-        ? `<div class="cart-address-card">
+      ? `<div class="cart-address-card">
              <div class="cart-address-card__name">${defaultAddr.name} · ${defaultAddr.phone}</div>
              <div class="cart-address-card__detail">${defaultAddr.address}</div>
              <span class="cart-address-card__default-tag">ค่าเริ่มต้น</span>
            </div>`
-        : `<div class="cart-address-empty" onclick="renderAddressPanel();openPanel('address-panel');">
+      : `<div class="cart-address-empty" onclick="renderAddressPanel();openPanel('address-panel');">
              <span>+ เพิ่มที่อยู่จัดส่ง</span>
            </div>`
-      }
+    }
     </div>
   `;
 
@@ -695,7 +695,7 @@ function renderCartPanel() {
 }
 
 /* ── Cart actions (global) ── */
-window.changeQty = function(cartItemId, delta) {
+window.changeQty = function (cartItemId, delta) {
   const items = Cart.getAll();
   const item = items.find(i => (i.cartItemId || i.id) === cartItemId);
   if (!item) return;
@@ -708,55 +708,55 @@ window.changeQty = function(cartItemId, delta) {
   renderCartPanel();
 };
 
-window.removeCartItem = function(cartItemId) {
+window.removeCartItem = function (cartItemId) {
   Cart.remove(cartItemId);
   renderCartPanel();
   showToast('🗑️ ลบออกจากตะกร้าแล้ว', 2000);
 };
 
-window.clearCart = function() {
+window.clearCart = function () {
   Cart.clear();
   renderCartPanel();
   showToast('🗑️ ล้างตะกร้าทั้งหมดแล้ว', 2000);
 };
 
-window.applyPromoCode = function() {
+window.applyPromoCode = function () {
   const input = document.getElementById('promo-code-input');
   if (!input) return;
   const code = input.value.trim().toUpperCase();
   if (!code) return;
-  
+
   let found = promoCodes.find(c => c.code === code);
-  if (!found) { 
+  if (!found) {
     found = { code, description: 'ไม่พบโค้ดส่วนลดนี้', _notFound: true };
   }
-  
+
   Cart.setAppliedPromo(found);
   renderCartPanel();
 };
 
-window.removePromoCode = function() {
+window.removePromoCode = function () {
   Cart.clearPromo();
   renderCartPanel();
   showToast('🏷️ ยกเลิกโค้ดส่วนลดแล้ว');
 };
 
-window.applyShippingCode = function() {
+window.applyShippingCode = function () {
   const input = document.getElementById('ship-code-input');
   if (!input) return;
   const code = input.value.trim().toUpperCase();
   if (!code) return;
-  
+
   let found = shippingCodes.find(c => c.code === code);
-  if (!found) { 
+  if (!found) {
     found = { code, description: 'ไม่พบโค้ดค่าส่งนี้', _notFound: true };
   }
-  
+
   Cart.setAppliedShipping(found);
   renderCartPanel();
 };
 
-window.removeShippingCode = function() {
+window.removeShippingCode = function () {
   Cart.clearShipping();
   renderCartPanel();
   showToast('🚚 ยกเลิกโค้ดค่าส่งแล้ว');
@@ -765,7 +765,7 @@ window.removeShippingCode = function() {
 /* ══════════════════════════════════════════════
    CHECKOUT — compile & send via LINE
    ══════════════════════════════════════════════ */
-window.sendCheckoutMessage = async function() {
+window.sendCheckoutMessage = async function () {
   const items = Cart.getAll();
   if (!items.length) { showToast('⚠️ ตะกร้าว่าง'); return; }
 
@@ -837,9 +837,9 @@ function renderWishlistPanel() {
     <div class="cart-item" id="wish-item-${p.id}">
       <div class="cart-item__img">
         ${imgUrl
-          ? `<img src="${imgUrl}" alt="${p.nameTh}" onerror="this.outerHTML='<div class=&quot;cart-item__emoji-fallback&quot;>${p.emoji}</div>'">`
-          : `<div class="cart-item__emoji-fallback">${p.emoji}</div>`
-        }
+        ? `<img src="${imgUrl}" alt="${p.nameTh}" onerror="this.outerHTML='<div class=&quot;cart-item__emoji-fallback&quot;>${p.emoji}</div>'">`
+        : `<div class="cart-item__emoji-fallback">${p.emoji}</div>`
+      }
       </div>
       <div class="cart-item__info">
         <div class="cart-item__name">${p.nameTh}</div>
@@ -855,7 +855,7 @@ function renderWishlistPanel() {
   }).join('');
 }
 
-window.addWishlistToCart = function(id) {
+window.addWishlistToCart = function (id) {
   const p = PRODUCTS.find(prod => prod.id === id);
   if (p) {
     Cart.add(p, 1);
@@ -863,7 +863,7 @@ window.addWishlistToCart = function(id) {
   }
 };
 
-window.removeWishlistItem = function(id) {
+window.removeWishlistItem = function (id) {
   Wishlist.toggle(id);
   renderWishlistPanel();
   renderProductGrid(); // refresh hearts
@@ -914,7 +914,7 @@ function renderAddressPanel() {
   body.innerHTML = html;
 }
 
-window.addNewAddress = function() {
+window.addNewAddress = function () {
   const name = document.getElementById('addr-name')?.value.trim();
   const phone = document.getElementById('addr-phone')?.value.trim();
   const address = document.getElementById('addr-address')?.value.trim();
@@ -929,13 +929,13 @@ window.addNewAddress = function() {
   showToast('✅ เพิ่มที่อยู่เรียบร้อยแล้ว');
 };
 
-window.deleteAddress = function(id) {
+window.deleteAddress = function (id) {
   AddressManager.remove(id);
   renderAddressPanel();
   showToast('🗑️ ลบที่อยู่แล้ว');
 };
 
-window.setDefaultAddress = function(id) {
+window.setDefaultAddress = function (id) {
   AddressManager.setDefault(id);
   renderAddressPanel();
   showToast('✅ ตั้งเป็นที่อยู่เริ่มต้นแล้ว');
@@ -1048,7 +1048,7 @@ window.scrollSlider = function (dir) {
   if (track) track.scrollBy({ left: dir * track.offsetWidth, behavior: 'smooth' });
 };
 
-window.scrollDescImages = function(dir) {
+window.scrollDescImages = function (dir) {
   const track = document.getElementById('desc-images-track');
   if (track) track.scrollBy({ left: dir * 210, behavior: 'smooth' });
 };
@@ -1066,7 +1066,7 @@ function hydrateProductDetailPage(product) {
   const main = document.querySelector('main.product-detail');
   if (!main) return;
 
-  const imagesPath = `../assets/images/products/${product.id === 'booth7' ? 'booth-7' : product.id}`;
+  const imagesPath = `../assets/images/products/${product.id}`;
 
   const highlights = [
     { icon: '🌱', text: `ต้นพันธุ์เสียบยอดแท้ 100% สายพันธุ์ ${product.variety} คัดสรรกิ่งพันธุ์คุณภาพดีจากต้นแม่ที่สมบูรณ์` },
@@ -1297,7 +1297,7 @@ function hydrateProductDetailPage(product) {
 }
 
 /* ── Global action handlers ── */
-window.handleAddToCartClick = function(productId) {
+window.handleAddToCartClick = function (productId) {
   const p = PRODUCTS.find(prod => prod.id === productId);
   if (p) {
     Cart.add(p, 1);
@@ -1305,7 +1305,7 @@ window.handleAddToCartClick = function(productId) {
   }
 };
 
-window.contactAdmin = async function(subject) {
+window.contactAdmin = async function (subject) {
   const ok = await initLiff();
   const msgText = subject
     ? `🌿 สวัสดีครับ ติดต่อแอดมินสวนยุทธนา ฟาร์ม\n📋 เรื่อง: สนใจ${subject}\n\nรบกวนสอบถามรายละเอียดเพิ่มเติมครับ 🙏`
@@ -1379,7 +1379,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const filename = parts[parts.length - 1]; // e.g. "hass.html"
 
     const id = filename.replace('.html', '');
-    const normalizedId = id === 'booth-7' ? 'booth7' : id;
+    const normalizedId = id === id;
     const product = PRODUCTS.find(p => p.id === normalizedId);
     if (product) {
       hydrateProductDetailPage(product);

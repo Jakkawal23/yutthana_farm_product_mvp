@@ -163,9 +163,9 @@
     "rating": 4.6,
     "reviewCount": 41,
     "sold": 189,
-    "href": "products/booth-7.html",
+    "href": "products/booth7.html",
     "emoji": "🌳",
-    "imageCover": "assets/images/products/booth-7/00.png",
+    "imageCover": "assets/images/products/booth7/00.png",
     "shortDesc": "ต้นอโวคาโดบูท-7เสียบยอด ปลูกง่าย ทนอากาศหนาวและร้อนได้ดี ให้ผลดกช่วงฤดูหนาว",
     "tags": [
       "โครงการหลวง",
@@ -656,7 +656,7 @@
     "sold": 120,
     "href": "products/ordinary_avocado.html",
     "emoji": "🌱",
-    "imageCover": "",
+    "imageCover": "assets/images/products/ordinary_avocado/00.png",
     "shortDesc": "ต้นอโวคาโดพันธุ์พื้นเมืองเพาะเมล็ด โตไว รากแข็งแรง ใช้เป็นต้นตอได้ดี",
     "tags": [
       "เพาะเมล็ด",
@@ -704,7 +704,7 @@
     "sold": 450,
     "href": "products/arabica_tree.html",
     "emoji": "☕",
-    "imageCover": "",
+    "imageCover": "assets/images/products/arabica_tree/00.png",
     "shortDesc": "ต้นกล้ากาแฟอาราบิก้า 100% สายพันธุ์ดี ทนโรค ให้ผลผลิตเมล็ดกาแฟคุณภาพสูง",
     "tags": [
       "กาแฟ",
@@ -752,7 +752,7 @@
     "sold": 85,
     "href": "products/abiu_tree.html",
     "emoji": "🍋",
-    "imageCover": "",
+    "imageCover": "assets/images/products/abiu_tree/00.png",
     "shortDesc": "ต้นเอบิ้ว ผลไม้สีเหลืองทอง รสชาติหวานหอมคล้ายพุดดิ้งคาราเมล ปลูกง่ายในไทย",
     "tags": [
       "เอบิ้ว",
@@ -801,7 +801,7 @@
     "sold": 1200,
     "href": "products/premium_drip.html",
     "emoji": "☕",
-    "imageCover": "",
+    "imageCover": "assets/images/products/premium_drip/00.png",
     "shortDesc": "กาแฟดริปหูแขวนเกรดพรีเมียม หอมกรุ่นกลิ่นอโรม่า ชงง่ายพกพาสะดวก (10 ซอง)",
     "tags": [
       "กาแฟดริป",
@@ -849,7 +849,7 @@
     "sold": 800,
     "href": "products/doi_pha_dang_drip.html",
     "emoji": "☕",
-    "imageCover": "",
+    "imageCover": "assets/images/products/doi_pha_dang_drip/00.png",
     "shortDesc": "กาแฟดริปหูแขวน ดอยผาแดง หอมกรุ่น ดื่มง่าย มีให้เลือกหลายขนาด",
     "tags": [
       "กาแฟดริป",
@@ -922,7 +922,7 @@
     "sold": 300,
     "href": "products/parchment_coffee.html",
     "emoji": "🌾",
-    "imageCover": "",
+    "imageCover": "assets/images/products/parchment_coffee/00.png",
     "shortDesc": "เมล็ดกาแฟกะลา อาราบิก้า 100% ตากแห้งอย่างดี ความชื้นมาตรฐาน สำหรับนำไปสีและคั่ว",
     "tags": [
       "กาแฟกะลา",
@@ -990,7 +990,7 @@
     "sold": 600,
     "href": "products/green_coffee.html",
     "emoji": "🟢",
-    "imageCover": "",
+    "imageCover": "assets/images/products/green_coffee/00.png",
     "shortDesc": "สารกาแฟอาราบิก้า (Green Beans) คัดไซส์อย่างดี พร้อมนำไปคั่ว มีเกรด A และ B",
     "tags": [
       "สารกาแฟ",
@@ -1077,7 +1077,7 @@
     "sold": 2500,
     "href": "products/roasted_arabica.html",
     "emoji": "☕",
-    "imageCover": "",
+    "imageCover": "assets/images/products/roasted_arabica/00.png",
     "shortDesc": "เมล็ดกาแฟคั่วสดใหม่ หอมละมุน เลือกได้ 4 ระดับการคั่ว ตอบโจทย์ทุกสไตล์การดื่ม",
     "tags": [
       "กาแฟคั่ว",
