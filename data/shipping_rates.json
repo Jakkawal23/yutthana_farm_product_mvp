@@ -1,0 +1,27 @@
+[
+  {
+    "minWeight": 0,
+    "maxWeight": 1500,
+    "rate": 50
+  },
+  {
+    "minWeight": 1501,
+    "maxWeight": 3000,
+    "rate": 80
+  },
+  {
+    "minWeight": 3001,
+    "maxWeight": 5000,
+    "rate": 150
+  },
+  {
+    "minWeight": 5001,
+    "maxWeight": 10000,
+    "rate": 200
+  },
+  {
+    "minWeight": 10001,
+    "maxWeight": 999999,
+    "rate": 300
+  }
+]

@@ -1,0 +1,1172 @@
+[
+  {
+    "id": "hass",
+    "nameTh": "ต้นอโวคาโดแฮส",
+    "nameEn": "Hass Avocado Tree",
+    "variety": "Hass",
+    "groups": [
+      "avocado_tree",
+      "bestseller"
+    ],
+    "weight": 1500,
+    "price": 350,
+    "priceOriginal": 420,
+    "badge": "ยอดนิยม / โครงการหลวง",
+    "badgeType": "",
+    "rating": 4.9,
+    "reviewCount": 128,
+    "sold": 1240,
+    "href": "products/hass.html",
+    "emoji": "🌿",
+    "imageCover": "assets/images/products/hass/00.png",
+    "shortDesc": "ต้นอโวคาโดแฮสเสียบยอด ยอดนิยมอันดับ 1 โตเร็ว ผลดก รสครีมมี่เข้มข้น โครงการหลวงส่งเสริม",
+    "tags": [
+      "โครงการหลวง",
+      "ต้นเสียบยอด",
+      "โตเร็ว",
+      "ผลดกยอดนิยม"
+    ],
+    "origin": "แคลิฟอร์เนีย สหรัฐอเมริกา",
+    "harvestSeason": "พฤศจิกายน - มกราคม",
+    "fruitWeight": "200 - 300 กรัม",
+    "skinType": "ผิวขรุขระ สีเขียวเข้ม (เปลี่ยนเป็นสีม่วงดำเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "🌍",
+        "text": "เป็นสายพันธุ์ที่ได้รับความนิยมสูงสุดในโลก รสชาติอร่อยเป็นที่ยอมรับระดับสากล"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อสีเหลืองครีม เนื้อละเอียดนุ่ม ไม่มีเส้น รสชาติหวานมันเข้มข้น ไขมันดีสูง"
+      },
+      {
+        "icon": "🍽️",
+        "text": "เมล็ดมีขนาดเล็ก ทำให้ได้เนื้ออโวคาโดในสัดส่วนที่มาก คุ้มค่าที่สุด"
+      },
+      {
+        "icon": "⛰️",
+        "text": "เหมาะสมกับพื้นที่ปลูกที่สูงระดับ 700 เมตรขึ้นไป ชอบอากาศเย็น"
+      }
+    ]
+  },
+  {
+    "id": "pinkerton",
+    "nameTh": "ต้นอโวคาโดพิงค์เคอร์ตัน",
+    "nameEn": "Pinkerton Avocado Tree",
+    "variety": "Pinkerton",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 300,
+    "priceOriginal": null,
+    "badge": "ใหม่ / โครงการหลวง",
+    "badgeType": "new",
+    "rating": 4.7,
+    "reviewCount": 86,
+    "sold": 432,
+    "href": "products/pinkerton.html",
+    "emoji": "🌱",
+    "imageCover": "assets/images/products/pinkerton/00.png",
+    "shortDesc": "ต้นอโวคาโดพิงค์เคอร์ตันเสียบยอด ผลยาว เนื้อเยอะมากเมล็ดเล็ก โครงการหลวงส่งเสริม",
+    "tags": [
+      "โครงการหลวง",
+      "ต้นเสียบยอด",
+      "ผลยาว",
+      "เนื้อเยอะ"
+    ],
+    "origin": "แคลิฟอร์เนีย สหรัฐอเมริกา",
+    "harvestSeason": "ตุลาคม - ธันวาคม",
+    "fruitWeight": "250 - 450 กรัม",
+    "skinType": "ผิวขรุขระเล็กน้อย สีเขียวเข้ม (สีไม่เปลี่ยนเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "🍐",
+        "text": "ผลมีลักษณะทรงยาวคล้ายลูกแพร์ ปอกเปลือกง่ายมาก"
+      },
+      {
+        "icon": "🥑",
+        "text": "จุดเด่นคือ \"เมล็ดเล็กมาก\" ทำให้มีปริมาณเนื้อเยอะกว่าพันธุ์อื่นๆ อย่างเห็นได้ชัด"
+      },
+      {
+        "icon": "😋",
+        "text": "เนื้อสีเหลืองอ่อน รสชาติมันเนย อร่อยไม่แพ้สายพันธุ์แฮส"
+      },
+      {
+        "icon": "🌳",
+        "text": "ต้นมีความแข็งแรง ให้ผลผลิตดกและสม่ำเสมอ"
+      }
+    ]
+  },
+  {
+    "id": "buccanear",
+    "nameTh": "ต้นอโวคาโดบัคคาเนีย",
+    "nameEn": "Buccaneer Avocado Tree",
+    "variety": "Buccaneer",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 320,
+    "priceOriginal": 380,
+    "badge": "Sale",
+    "badgeType": "sale",
+    "rating": 4.8,
+    "reviewCount": 54,
+    "sold": 318,
+    "href": "products/buccanear.html",
+    "emoji": "🌿",
+    "imageCover": "assets/images/products/buccanear/00.png",
+    "shortDesc": "ต้นอโวคาโดบัคคาเนียเสียบยอด สายพันธุ์พรีเมียม รสหวานมัน เนื้อละเอียด โครงการหลวงส่งเสริม",
+    "tags": [
+      "โครงการหลวง",
+      "ต้นเสียบยอด",
+      "รสหวาน",
+      "ทนทานโรค"
+    ],
+    "origin": "กัวเตมาลา",
+    "harvestSeason": "กันยายน - พฤศจิกายน",
+    "fruitWeight": "300 - 500 กรัม",
+    "skinType": "ผิวค่อนข้างเรียบ สีเขียว",
+    "specificHighlights": [
+      {
+        "icon": "✨",
+        "text": "สายพันธุ์คุณภาพดีที่มูลนิธิโครงการหลวงส่งเสริมให้ปลูก"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อสีเหลืองอมเขียว เนื้อละเอียดเนียน รสชาติมันอร่อย"
+      },
+      {
+        "icon": "🛡️",
+        "text": "เป็นสายพันธุ์ที่ทนทานต่อโรคและแมลงได้ดี โตไว"
+      },
+      {
+        "icon": "⚖️",
+        "text": "ผลมีขนาดกลางถึงใหญ่ ทรงรี น้ำหนักดี"
+      }
+    ]
+  },
+  {
+    "id": "booth7",
+    "nameTh": "ต้นอโวคาโดบูท-7",
+    "nameEn": "Booth 7 Avocado Tree",
+    "variety": "Booth 7",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 330,
+    "priceOriginal": null,
+    "badge": "ปลูกง่าย",
+    "badgeType": "",
+    "rating": 4.6,
+    "reviewCount": 41,
+    "sold": 189,
+    "href": "products/booth7.html",
+    "emoji": "🌳",
+    "imageCover": "assets/images/products/booth7/00.png",
+    "shortDesc": "ต้นอโวคาโดบูท-7เสียบยอด ปลูกง่าย ทนอากาศหนาวและร้อนได้ดี ให้ผลดกช่วงฤดูหนาว",
+    "tags": [
+      "โครงการหลวง",
+      "ต้นเสียบยอด",
+      "ปลูกง่าย",
+      "ทนสภาพอากาศ"
+    ],
+    "origin": "ฟลอริดา สหรัฐอเมริกา",
+    "harvestSeason": "กันยายน - พฤศจิกายน",
+    "fruitWeight": "300 - 500 กรัม",
+    "skinType": "ผิวขรุขระเล็กน้อย สีเขียว (ไม่เปลี่ยนสีเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "🎯",
+        "text": "ผลทรงกลมสวยงาม ขนาดกลางถึงใหญ่ เปลือกหนา ทนทานต่อการขนส่ง"
+      },
+      {
+        "icon": "🌡️",
+        "text": "ทนทานต่อสภาพอากาศได้ดี ทั้งอากาศร้อนและอากาศเย็น ปลูกง่ายในไทย"
+      },
+      {
+        "icon": "😋",
+        "text": "เนื้อสีเหลืองอ่อน รสชาติมันอมหวานเล็กน้อย เนื้อแน่นไม่เละ"
+      },
+      {
+        "icon": "🌳",
+        "text": "เป็นสายพันธุ์ที่ให้ผลผลิตดกมาก เหมาะสำหรับปลูกเชิงพาณิชย์"
+      }
+    ]
+  },
+  {
+    "id": "peterson",
+    "nameTh": "ต้นอโวคาโดปีเตอร์สัน",
+    "nameEn": "Peterson Avocado Tree",
+    "variety": "Peterson",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 380,
+    "priceOriginal": null,
+    "badge": "โครงการหลวง",
+    "badgeType": "",
+    "rating": 4.9,
+    "reviewCount": 33,
+    "sold": 97,
+    "href": "products/peterson.html",
+    "emoji": "🌴",
+    "imageCover": "assets/images/products/peterson/00.png",
+    "shortDesc": "ต้นอโวคาโดปีเตอร์สันเสียบยอด พันธุ์เบาโตเร็ว ผลใหญ่ รสหวานมันเข้มข้น พรีเมียม",
+    "tags": [
+      "โครงการหลวง",
+      "ต้นเสียบยอด",
+      "ผลใหญ่",
+      "พรีเมียม"
+    ],
+    "origin": "คิวบา",
+    "harvestSeason": "กรกฎาคม - สิงหาคม",
+    "fruitWeight": "250 - 400 กรัม",
+    "skinType": "ผิวเรียบ สีเขียวอมเหลือง",
+    "specificHighlights": [
+      {
+        "icon": "⏱️",
+        "text": "เป็น \"พันธุ์เบา\" ที่สามารถเก็บเกี่ยวผลผลิตได้เร็วในช่วงกลางปี"
+      },
+      {
+        "icon": "🤤",
+        "text": "รสชาติดีมาก เนื้อละเอียด นุ่มนวล มีรสหวานมันเป็นเอกลักษณ์"
+      },
+      {
+        "icon": "🍏",
+        "text": "ผลค่อนข้างกลม ผิวเรียบสวย ปอกง่าย"
+      },
+      {
+        "icon": "🏆",
+        "text": "จัดเป็นสายพันธุ์พรีเมียมที่มีราคาสูงและเป็นที่ต้องการของตลาด"
+      }
+    ]
+  },
+  {
+    "id": "phob-phra-08",
+    "nameTh": "ต้นอโวคาโดพบพระ 08",
+    "nameEn": "Phop Phra 08 Avocado Tree",
+    "variety": "Phop Phra 08",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 280,
+    "priceOriginal": null,
+    "badge": "พันธุ์ไทย / ท้องถิ่น",
+    "badgeType": "new",
+    "rating": 4.5,
+    "reviewCount": 22,
+    "sold": 145,
+    "href": "products/phob-phra-08.html",
+    "emoji": "🌿",
+    "imageCover": "assets/images/products/phob-phra-08/00.png",
+    "shortDesc": "ต้นอโวคาโดพบพระ 08 เสียบยอด คัดเลือกพันธุ์ดีจาก อ.พบพระ ตาก โตไว ทนแล้ง ปลูกง่าย",
+    "tags": [
+      "พันธุ์ไทย",
+      "ต้นเสียบยอด",
+      "ทนแล้ง",
+      "ปลูกง่าย"
+    ],
+    "origin": "อ.พบพระ จ.ตาก (ประเทศไทย)",
+    "harvestSeason": "พฤษภาคม - ตุลาคม",
+    "fruitWeight": "200 - 350 กรัม",
+    "skinType": "ผิวเรียบ สีเขียว",
+    "specificHighlights": [
+      {
+        "icon": "🇹🇭",
+        "text": "เป็นสายพันธุ์อัตลักษณ์ของ อ.พบพระ จ.ตาก ที่ได้รับการพัฒนาจนนิ่งและเป็นที่ยอมรับ"
+      },
+      {
+        "icon": "☀️",
+        "text": "ทนต่อสภาพอากาศร้อนและแล้งได้ดีมาก เติบโตได้ดีในทุกพื้นที่ของประเทศไทย"
+      },
+      {
+        "icon": "😋",
+        "text": "เนื้อสัมผัสเหนียว มัน เนียนเป็นพิเศษ ถูกปากคนไทย"
+      },
+      {
+        "icon": "📈",
+        "text": "ปลูกง่าย ให้ผลผลิตสูงและรวดเร็ว เป็นที่ต้องการของตลาด"
+      }
+    ]
+  },
+  {
+    "id": "a034",
+    "nameTh": "ต้นอโวคาโด A034",
+    "nameEn": "A034 Avocado Tree",
+    "variety": "A034",
+    "groups": [
+      "avocado_tree",
+      "bestseller"
+    ],
+    "weight": 1500,
+    "price": 260,
+    "priceOriginal": null,
+    "badge": "นิยมสูง / พันธุ์เวียดนาม",
+    "badgeType": "new",
+    "rating": 4.7,
+    "reviewCount": 94,
+    "sold": 867,
+    "href": "products/a034.html",
+    "emoji": "🌱",
+    "imageCover": "assets/images/products/a034/00.png",
+    "shortDesc": "ต้นอโวคาโด A034 เสียบยอด พันธุ์เวียดนามสุดฮิต ผลยาวรูปทรงสวย รสมันเนยเข้มข้น",
+    "tags": [
+      "พันธุ์เวียดนาม",
+      "ต้นเสียบยอด",
+      "ผลยาว",
+      "รสมันเนย"
+    ],
+    "origin": "ดาลัด เวียดนาม",
+    "harvestSeason": "พฤษภาคม - สิงหาคม",
+    "fruitWeight": "300 - 800 กรัม",
+    "skinType": "ผิวเรียบมันวาว สีเขียวเข้ม (ไม่เปลี่ยนสี)",
+    "specificHighlights": [
+      {
+        "icon": "🥒",
+        "text": "รูปทรงผลเรียวยาวเป็นเอกลักษณ์ บางผลอาจยาวถึง 30 ซม. สวยงามแปลกตา"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อมีสีเหลืองทอง เนื้อเนียนเหนียว รสชาติหวานมันคล้ายเนย"
+      },
+      {
+        "icon": "🍽️",
+        "text": "เมล็ดเล็กมากหรือบางครั้งแทบไม่มีเมล็ด ทำให้มีเปอร์เซ็นต์เนื้อสูงมาก"
+      },
+      {
+        "icon": "☀️",
+        "text": "เจริญเติบโตได้ดีในสภาพอากาศร้อนชื้นแบบประเทศไทย โตไว ออกผลดก"
+      }
+    ]
+  },
+  {
+    "id": "ta21",
+    "nameTh": "ต้นอโวคาโด TA21",
+    "nameEn": "TA21 Avocado Tree",
+    "variety": "TA21",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 290,
+    "priceOriginal": 340,
+    "badge": "แนะนำ / ปลูกง่าย",
+    "badgeType": "",
+    "rating": 4.6,
+    "reviewCount": 68,
+    "sold": 523,
+    "href": "products/ta21.html",
+    "emoji": "🌿",
+    "imageCover": "assets/images/products/ta21/00.png",
+    "shortDesc": "ต้นอโวคาโด TA21 เสียบยอด รสชาติดีกลมกล่อมคล้ายแฮส ออกผลดกมาก ทนร้อน",
+    "tags": [
+      "พันธุ์เวียดนาม",
+      "ต้นเสียบยอด",
+      "ออกผลดก",
+      "ไขมันดีสูง"
+    ],
+    "origin": "เวียดนาม",
+    "harvestSeason": "มิถุนายน - ตุลาคม",
+    "fruitWeight": "250 - 400 กรัม",
+    "skinType": "ผิวขรุขระ สีเขียวเข้ม (เปลี่ยนเป็นสีม่วงเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "🌟",
+        "text": "สายพันธุ์คุณภาพสูงที่ได้รับสมญานามว่า \"แฮสเวียดนาม\" ด้วยรสชาติที่ใกล้เคียงมาก"
+      },
+      {
+        "icon": "🔥",
+        "text": "มีจุดเด่นเรื่องความทนทานต่ออากาศร้อนได้ดีเยี่ยม เหมาะกับทุกภูมิภาคของไทย"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อเนียนละเอียด ไม่มีเส้นใย รสชาติมันเข้มข้น ไขมันดีสูง"
+      },
+      {
+        "icon": "🌳",
+        "text": "ให้ผลผลิตดกและให้ผลค่อนข้างเร็ว ถือเป็นพันธุ์เชิงพาณิชย์ที่น่าจับตามอง"
+      }
+    ]
+  },
+  {
+    "id": "cuba",
+    "nameTh": "ต้นอโวคาโดคิวบา",
+    "nameEn": "Cuba Avocado Tree",
+    "variety": "Cuba",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 250,
+    "priceOriginal": null,
+    "badge": "ทนร้อน / ปลูกง่าย",
+    "badgeType": "",
+    "rating": 4.3,
+    "reviewCount": 45,
+    "sold": 512,
+    "href": "products/cuba.html",
+    "emoji": "🌳",
+    "imageCover": "assets/images/products/cuba/00.png",
+    "shortDesc": "ต้นอโวคาโดคิวบาเสียบยอด ทนร้อนได้ดีเยี่ยม เหมาะสำหรับพื้นที่ราบ โตไวมาก",
+    "tags": [
+      "พันธุ์เวียดนาม",
+      "ต้นเสียบยอด",
+      "ทนร้อน",
+      "โตไวมาก"
+    ],
+    "origin": "สายพันธุ์ปรับปรุงจากเวียดนาม (ต้นสายจากคิวบา)",
+    "harvestSeason": "มิถุนายน - สิงหาคม",
+    "fruitWeight": "500 - 1,300 กรัม",
+    "skinType": "ผิวเรียบ สีเขียว (เปลี่ยนเป็นสีม่วงเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "☀️",
+        "text": "เป็นสายพันธุ์ที่ขึ้นชื่อเรื่องการทนร้อนได้ดีที่สุด ปลูกในพื้นที่ราบต่ำได้ผลดี"
+      },
+      {
+        "icon": "🚀",
+        "text": "ต้นเจริญเติบโตได้รวดเร็วมาก ให้ร่มเงาไว และเริ่มให้ผลผลิตได้เร็ว"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อมีสีเหลืองอ่อน รสชาติมันปานกลาง ทานง่าย"
+      },
+      {
+        "icon": "💰",
+        "text": "ให้ผลผลิตต่อต้นสูงมาก ทนทานต่อโรคและแมลง ดูแลง่าย"
+      }
+    ]
+  },
+  {
+    "id": "big",
+    "nameTh": "ต้นอโวคาโดบิ๊ก",
+    "nameEn": "Big Avocado Tree",
+    "variety": "Big",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 270,
+    "priceOriginal": null,
+    "badge": "ผลใหญ่พิเศษ",
+    "badgeType": "",
+    "rating": 4.4,
+    "reviewCount": 38,
+    "sold": 289,
+    "href": "products/big.html",
+    "emoji": "🌿",
+    "imageCover": "assets/images/products/big/00.png",
+    "shortDesc": "ต้นอโวคาโดบิ๊กเสียบยอด ผลใหญ่พิเศษ เนื้อแน่น รสชาติหวานมัน ทนทานโรคสูง",
+    "tags": [
+      "พันธุ์เวียดนาม",
+      "ต้นเสียบยอด",
+      "ผลใหญ่",
+      "แข็งแรง"
+    ],
+    "origin": "เวียดนาม",
+    "harvestSeason": "กรกฎาคม - กันยายน",
+    "fruitWeight": "800 - 1,500 กรัม",
+    "skinType": "ผิวเรียบ สีเขียวอ่อน (อมม่วงเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "🐘",
+        "text": "จุดเด่นที่สุดคือขนาดผลที่ \"ใหญ่ยักษ์\" บางผลมีน้ำหนักถึง 1 กิโลกรัม"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อหนาฟู สีเหลืองนวล รสชาติหวานมันกำลังดี ทานสดอร่อย"
+      },
+      {
+        "icon": "💪",
+        "text": "ระบบรากแข็งแรงมาก ทนทานต่อโรครากเน่าโคนเน่าได้ดี"
+      },
+      {
+        "icon": "🎁",
+        "text": "ด้วยขนาดผลที่ใหญ่มาก จึงเป็นที่นิยมสำหรับซื้อเป็นของฝาก"
+      }
+    ]
+  },
+  {
+    "id": "red-vietnam",
+    "nameTh": "ต้นอโวคาโดเรด เวียดนาม",
+    "nameEn": "Red Vietnam Avocado Tree",
+    "variety": "Red Vietnam",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 260,
+    "priceOriginal": null,
+    "badge": "พันธุ์เวียดนาม",
+    "badgeType": "",
+    "rating": 4.5,
+    "reviewCount": 52,
+    "sold": 334,
+    "href": "products/red-vietnam.html",
+    "emoji": "🍂",
+    "imageCover": "assets/images/products/red-vietnam/00.png",
+    "shortDesc": "ต้นอโวคาโดเรดเวียดนามเสียบยอด เปลือกสีแดงม่วงเมื่อสุกสวยงาม เนื้อสีเหลืองเข้มหวานมัน",
+    "tags": [
+      "พันธุ์เวียดนาม",
+      "ต้นเสียบยอด",
+      "ยอดแดงสวย",
+      "ออกผลเร็ว"
+    ],
+    "origin": "เวียดนาม",
+    "harvestSeason": "พฤษภาคม - สิงหาคม",
+    "fruitWeight": "300 - 400 กรัม",
+    "skinType": "ผิวเรียบ สีเขียวอมแดง (เปลี่ยนเป็นแดงม่วงเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "🍁",
+        "text": "จุดเด่นคือ \"ใบอ่อนและยอดใหม่มีสีแดง\" สวยงามแปลกตา ใช้ปลูกประดับสวนได้"
+      },
+      {
+        "icon": "⏱️",
+        "text": "จัดเป็น \"พันธุ์เบา\" ที่โตไวมากและให้ผลผลิตเร็ว (1-2 ปีเริ่มติดผล)"
+      },
+      {
+        "icon": "🍒",
+        "text": "ผลสุกมักมีก้านผลและเปลือกอมสีแดง รสชาติมัน เนื้อนุ่มหนึบ"
+      },
+      {
+        "icon": "🌱",
+        "text": "ปรับตัวเข้ากับสภาพอากาศร้อนได้ดี ปลูกง่ายในทุกภูมิภาค"
+      }
+    ]
+  },
+  {
+    "id": "seedless",
+    "nameTh": "ต้นอโวคาโดไร้เมล็ด",
+    "nameEn": "Seedless Avocado Tree",
+    "variety": "Seedless",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 350,
+    "priceOriginal": null,
+    "badge": "หายาก",
+    "badgeType": "sale",
+    "rating": 4.7,
+    "reviewCount": 16,
+    "sold": 78,
+    "href": "products/seedless.html",
+    "emoji": "✨",
+    "imageCover": "assets/images/products/seedless/00.png",
+    "shortDesc": "ต้นอโวคาโดไร้เมล็ดเสียบยอด พันธุ์แปลกทานง่ายไม่มีเมล็ด หายากเป็นที่ต้องการของตลาด",
+    "tags": [
+      "พันธุ์หายาก",
+      "ต้นเสียบยอด",
+      "ไม่มีเมล็ด",
+      "พรีเมียม"
+    ],
+    "origin": "สเปน / สายพันธุ์กลายพันธุ์",
+    "harvestSeason": "สิงหาคม - พฤศจิกายน",
+    "fruitWeight": "50 - 150 กรัม",
+    "skinType": "ผิวเรียบ สีเขียว (ไม่เปลี่ยนสี)",
+    "specificHighlights": [
+      {
+        "icon": "🚫",
+        "text": "จุดเด่นที่สุดคือ \"ไม่มีเมล็ด\" (Cocktail Avocado) สามารถทานได้ทั้งผลอย่างสะดวกสบาย"
+      },
+      {
+        "icon": "🥑",
+        "text": "ขนาดผลเล็กกะทัดรัด รูปทรงคล้ายแตงกวาจิ๋ว ทานง่าย พอดีคำ"
+      },
+      {
+        "icon": "😋",
+        "text": "เนื้อมีรสชาติมันเข้มข้น เนื้อสัมผัสเนียนละเอียด ไม่มีกากใย"
+      },
+      {
+        "icon": "💎",
+        "text": "เป็นสายพันธุ์หายากที่เชฟและภัตตาคารหรูนิยมนำไปทำเมนูพิเศษ"
+      }
+    ]
+  },
+  {
+    "id": "ruhuis",
+    "nameTh": "ต้นอโวคาโดรูเฮิล",
+    "nameEn": "Early Ruehle Avocado Tree",
+    "variety": "Ruehle",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 400,
+    "priceOriginal": null,
+    "badge": "พันธุ์เบา / หายาก",
+    "badgeType": "new",
+    "rating": 4.8,
+    "reviewCount": 11,
+    "sold": 43,
+    "href": "products/ruhuis.html",
+    "emoji": "💎",
+    "imageCover": "assets/images/products/ruhuis/00.png",
+    "shortDesc": "ต้นอโวคาโดรูเฮิลเสียบยอด พันธุ์เบาเก็บเกี่ยวเร็วมาก รสชาติยอดเยี่ยมเป็นเอกลักษณ์",
+    "tags": [
+      "พันธุ์หายาก",
+      "ต้นเสียบยอด",
+      "พันธุ์เบา",
+      "รสชาติพรีเมียม"
+    ],
+    "origin": "ฟลอริดา สหรัฐอเมริกา",
+    "harvestSeason": "พฤษภาคม - กรกฎาคม",
+    "fruitWeight": "160 - 200 กรัม",
+    "skinType": "ผิวเรียบ สีเขียว (เปลี่ยนเป็นสีม่วงดำเมื่อสุก)",
+    "specificHighlights": [
+      {
+        "icon": "⚡",
+        "text": "เป็น \"พันธุ์เบาพิเศษ\" เก็บเกี่ยวผลผลิตได้ก่อนสายพันธุ์อื่นๆ ชิงโอกาสทางการตลาดได้ดี"
+      },
+      {
+        "icon": "🥑",
+        "text": "เนื้อสีเหลืองเข้ม รสชาติมัน เหนียว นุ่ม หนึบ อร่อยมาก"
+      },
+      {
+        "icon": "🟣",
+        "text": "เมื่อสุกเปลือกจะเปลี่ยนเป็นสีม่วงดำ ทำให้สังเกตความสุกได้ง่าย"
+      },
+      {
+        "icon": "🌿",
+        "text": "ต้นแข็งแรง ใบใหญ่หนา ทนทานต่อโรคและแมลงได้ดี"
+      }
+    ]
+  },
+  {
+    "id": "ordinary_avocado",
+    "nameTh": "ต้นอโวคาโด พันธุ์ธรรมดา",
+    "nameEn": "Ordinary Avocado Tree",
+    "variety": "Local/Seedling",
+    "groups": [
+      "avocado_tree"
+    ],
+    "weight": 1500,
+    "price": 150,
+    "priceOriginal": null,
+    "badge": "พันธุ์พื้นเมือง",
+    "badgeType": "",
+    "rating": 4.2,
+    "reviewCount": 15,
+    "sold": 120,
+    "href": "products/ordinary_avocado.html",
+    "emoji": "🌱",
+    "imageCover": "assets/images/products/ordinary_avocado/00.png",
+    "shortDesc": "ต้นอโวคาโดพันธุ์พื้นเมืองเพาะเมล็ด โตไว รากแข็งแรง ใช้เป็นต้นตอได้ดี",
+    "tags": [
+      "เพาะเมล็ด",
+      "ต้นตอ",
+      "รากแข็งแรง"
+    ],
+    "origin": "ไทย",
+    "harvestSeason": "-",
+    "fruitWeight": "-",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "💪",
+        "text": "ระบบรากแข็งแรงมาก เหมาะสำหรับใช้เป็นต้นตอเสียบยอด"
+      },
+      {
+        "icon": "☀️",
+        "text": "ทนทานต่อสภาพอากาศร้อนและดินลูกรังได้ดี"
+      },
+      {
+        "icon": "🌳",
+        "text": "ให้ร่มเงาได้ดีเยี่ยม ลำต้นใหญ่แข็งแรง"
+      },
+      {
+        "icon": "💸",
+        "text": "ราคาประหยัด เหมาะสำหรับผู้เริ่มต้นปลูก"
+      }
+    ]
+  },
+  {
+    "id": "arabica_tree",
+    "nameTh": "ต้นกาแฟอาราบิก้า 100%",
+    "nameEn": "Arabica Coffee Tree",
+    "variety": "Arabica",
+    "groups": [
+      "seedlings"
+    ],
+    "weight": 1500,
+    "price": 60,
+    "priceOriginal": null,
+    "badge": "ยอดนิยม",
+    "badgeType": "",
+    "rating": 4.8,
+    "reviewCount": 42,
+    "sold": 450,
+    "href": "products/arabica_tree.html",
+    "emoji": "☕",
+    "imageCover": "assets/images/products/arabica_tree/00.png",
+    "shortDesc": "ต้นกล้ากาแฟอาราบิก้า 100% สายพันธุ์ดี ทนโรค ให้ผลผลิตเมล็ดกาแฟคุณภาพสูง",
+    "tags": [
+      "กาแฟ",
+      "อาราบิก้า",
+      "ต้นกล้า"
+    ],
+    "origin": "ดอยผาแดง",
+    "harvestSeason": "พฤศจิกายน - มกราคม",
+    "fruitWeight": "-",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "☕",
+        "text": "ให้ผลผลิตเมล็ดกาแฟอาราบิก้าคุณภาพสูง หอมกรุ่น"
+      },
+      {
+        "icon": "⛰️",
+        "text": "เหมาะสำหรับปลูกในพื้นที่สูง อากาศเย็น"
+      },
+      {
+        "icon": "🛡️",
+        "text": "สายพันธุ์คัดพิเศษ ทนทานต่อโรคราสนิม"
+      },
+      {
+        "icon": "🌱",
+        "text": "ดูแลรักษาง่าย ต้นกล้าแข็งแรงพร้อมปลูก"
+      }
+    ]
+  },
+  {
+    "id": "abiu_tree",
+    "nameTh": "ต้นเอบิ้ว (Abiu)",
+    "nameEn": "Abiu Tree",
+    "variety": "Abiu",
+    "groups": [
+      "seedlings"
+    ],
+    "weight": 1500,
+    "price": 250,
+    "priceOriginal": null,
+    "badge": "ผลไม้แปลก",
+    "badgeType": "new",
+    "rating": 4.6,
+    "reviewCount": 20,
+    "sold": 85,
+    "href": "products/abiu_tree.html",
+    "emoji": "🍋",
+    "imageCover": "assets/images/products/abiu_tree/00.png",
+    "shortDesc": "ต้นเอบิ้ว ผลไม้สีเหลืองทอง รสชาติหวานหอมคล้ายพุดดิ้งคาราเมล ปลูกง่ายในไทย",
+    "tags": [
+      "เอบิ้ว",
+      "ผลไม้แปลก",
+      "ปลูกง่าย"
+    ],
+    "origin": "อเมซอน (เพาะปลูกในไทย)",
+    "harvestSeason": "ให้ผลเกือบตลอดปี",
+    "fruitWeight": "200 - 400 กรัม",
+    "skinType": "ผิวเรียบ สีเหลืองทอง",
+    "specificHighlights": [
+      {
+        "icon": "🍮",
+        "text": "เนื้อผลไม้เนียนนุ่ม รสชาติคล้ายคัสตาร์ดหรือพุดดิ้งคาราเมล"
+      },
+      {
+        "icon": "☀️",
+        "text": "ชอบอากาศร้อนชื้นแบบประเทศไทย ปลูกง่ายมาก"
+      },
+      {
+        "icon": "🚀",
+        "text": "เจริญเติบโตเร็ว เริ่มให้ผลผลิตภายใน 2-3 ปี"
+      },
+      {
+        "icon": "✨",
+        "text": "ผลสีเหลืองทองสวยงาม เป็นไม้มงคลประดับสวนได้"
+      }
+    ]
+  },
+  {
+    "id": "premium_drip",
+    "nameTh": "กาแฟดริปหูแขวนพรีเมียม",
+    "nameEn": "Premium Drip Coffee",
+    "variety": "Arabica 100%",
+    "groups": [
+      "coffee",
+      "bestseller"
+    ],
+    "weight": 150,
+    "price": 250,
+    "priceOriginal": 300,
+    "badge": "พรีเมียม",
+    "badgeType": "sale",
+    "rating": 4.9,
+    "reviewCount": 150,
+    "sold": 1200,
+    "href": "products/premium_drip.html",
+    "emoji": "☕",
+    "imageCover": "assets/images/products/premium_drip/00.png",
+    "shortDesc": "กาแฟดริปหูแขวนเกรดพรีเมียม หอมกรุ่นกลิ่นอโรม่า ชงง่ายพกพาสะดวก (10 ซอง)",
+    "tags": [
+      "กาแฟดริป",
+      "พรีเมียม",
+      "อาราบิก้า"
+    ],
+    "origin": "ดอยผาแดง",
+    "harvestSeason": "-",
+    "fruitWeight": "100 กรัม",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "✨",
+        "text": "คัดเฉพาะเมล็ดเกรดพรีเมียม คั่วสดใหม่ หอมทะลุซอง"
+      },
+      {
+        "icon": "🎒",
+        "text": "ชงง่ายพกพาสะดวก แค่ฉีกซองแล้วเทน้ำร้อน"
+      },
+      {
+        "icon": "☕",
+        "text": "รสชาติกลมกล่อม มี Aftertaste ที่หวานยาวนาน"
+      },
+      {
+        "icon": "🎁",
+        "text": "แพ็คเกจสวยงาม เหมาะสำหรับเป็นของขวัญของฝาก"
+      }
+    ]
+  },
+  {
+    "id": "doi_pha_dang_drip",
+    "nameTh": "กาแฟดริปหูแขวน ดอยผาแดง",
+    "nameEn": "Doi Pha Dang Drip Coffee",
+    "variety": "Arabica 100%",
+    "groups": [
+      "coffee"
+    ],
+    "weight": 0,
+    "price": 150,
+    "priceOriginal": null,
+    "badge": "",
+    "badgeType": "",
+    "rating": 4.8,
+    "reviewCount": 210,
+    "sold": 800,
+    "href": "products/doi_pha_dang_drip.html",
+    "emoji": "☕",
+    "imageCover": "assets/images/products/doi_pha_dang_drip/00.png",
+    "shortDesc": "กาแฟดริปหูแขวน ดอยผาแดง หอมกรุ่น ดื่มง่าย มีให้เลือกหลายขนาด",
+    "tags": [
+      "กาแฟดริป",
+      "อาราบิก้า"
+    ],
+    "origin": "ดอยผาแดง",
+    "harvestSeason": "-",
+    "fruitWeight": "-",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "⛰️",
+        "text": "ปลูกด้วยความใส่ใจบนความสูงกว่า 1,200 เมตร"
+      },
+      {
+        "icon": "☕",
+        "text": "รสชาติ Nutty & Chocolate ดื่มง่ายได้ทุกวัน"
+      },
+      {
+        "icon": "📦",
+        "text": "มีให้เลือกหลายแพ็คเกจ 5 ซอง, 10 ซอง และ 15 ซอง"
+      },
+      {
+        "icon": "💧",
+        "text": "เพียงมีน้ำร้อนก็อร่อยได้ทุกที่ทุกเวลา"
+      }
+    ],
+    "options": [
+      {
+        "id": "size",
+        "name": "ขนาดบรรจุ",
+        "choices": [
+          {
+            "id": "5_sachets",
+            "label": "5 ซอง",
+            "priceAdd": 0,
+            "weightAdd": 50
+          },
+          {
+            "id": "10_sachets",
+            "label": "10 ซอง",
+            "priceAdd": 100,
+            "weightAdd": 100
+          },
+          {
+            "id": "15_sachets",
+            "label": "15 ซอง",
+            "priceAdd": 180,
+            "weightAdd": 150
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "parchment_coffee",
+    "nameTh": "เมล็ดกาแฟกะลา",
+    "nameEn": "Parchment Coffee",
+    "variety": "Arabica 100%",
+    "groups": [
+      "coffee"
+    ],
+    "weight": 0,
+    "price": 200,
+    "priceOriginal": null,
+    "badge": "สำหรับโรงคั่ว",
+    "badgeType": "",
+    "rating": 4.5,
+    "reviewCount": 45,
+    "sold": 300,
+    "href": "products/parchment_coffee.html",
+    "emoji": "🌾",
+    "imageCover": "assets/images/products/parchment_coffee/00.png",
+    "shortDesc": "เมล็ดกาแฟกะลา อาราบิก้า 100% ตากแห้งอย่างดี ความชื้นมาตรฐาน สำหรับนำไปสีและคั่ว",
+    "tags": [
+      "กาแฟกะลา",
+      "อาราบิก้า",
+      "วัตถุดิบ"
+    ],
+    "origin": "ดอยผาแดง",
+    "harvestSeason": "พฤศจิกายน - มกราคม",
+    "fruitWeight": "-",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "☀️",
+        "text": "ผ่านกระบวนการตากแดดธรรมชาติ ควบคุมความชื้นอย่างดี"
+      },
+      {
+        "icon": "🌾",
+        "text": "เมล็ดกาแฟกะลาคุณภาพดี เหมาะสำหรับโรงสีและโรงคั่วกาแฟ"
+      },
+      {
+        "icon": "⛰️",
+        "text": "ผลผลิตจากดอยผาแดง แหล่งปลูกกาแฟชั้นดี"
+      },
+      {
+        "icon": "📦",
+        "text": "มีให้เลือกทั้งขนาดทดลอง 500 กรัม และ 1000 กรัม"
+      }
+    ],
+    "options": [
+      {
+        "id": "weight",
+        "name": "ขนาดบรรจุ",
+        "choices": [
+          {
+            "id": "500g",
+            "label": "500 กรัม",
+            "priceAdd": 0,
+            "weightAdd": 500
+          },
+          {
+            "id": "1000g",
+            "label": "1000 กรัม",
+            "priceAdd": 180,
+            "weightAdd": 1000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "green_coffee",
+    "nameTh": "สารกาแฟ",
+    "nameEn": "Green Coffee Beans",
+    "variety": "Arabica 100%",
+    "groups": [
+      "coffee"
+    ],
+    "weight": 0,
+    "price": 250,
+    "priceOriginal": null,
+    "badge": "เมล็ดดิบ",
+    "badgeType": "",
+    "rating": 4.7,
+    "reviewCount": 88,
+    "sold": 600,
+    "href": "products/green_coffee.html",
+    "emoji": "🟢",
+    "imageCover": "assets/images/products/green_coffee/00.png",
+    "shortDesc": "สารกาแฟอาราบิก้า (Green Beans) คัดไซส์อย่างดี พร้อมนำไปคั่ว มีเกรด A และ B",
+    "tags": [
+      "สารกาแฟ",
+      "อาราบิก้า",
+      "เมล็ดดิบ"
+    ],
+    "origin": "ดอยผาแดง",
+    "harvestSeason": "-",
+    "fruitWeight": "-",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "🔍",
+        "text": "ผ่านการคัดแยกขนาดและข้อบกพร่อง (Defects) อย่างพิถีพิถัน"
+      },
+      {
+        "icon": "🔥",
+        "text": "พร้อมสำหรับนำไปคั่วในสไตล์ของคุณเอง"
+      },
+      {
+        "icon": "⭐",
+        "text": "มีให้เลือกทั้งเกรด A (เมล็ดสวยเต็ม) และ เกรด B"
+      },
+      {
+        "icon": "📦",
+        "text": "จำหน่ายทั้งขนาด 500 กรัม และ 1000 กรัม"
+      }
+    ],
+    "options": [
+      {
+        "id": "grade",
+        "name": "เกรดสารกาแฟ",
+        "choices": [
+          {
+            "id": "grade_a",
+            "label": "เกรด เอ",
+            "priceAdd": 50,
+            "weightAdd": 0
+          },
+          {
+            "id": "grade_b",
+            "label": "เกรด บี",
+            "priceAdd": 0,
+            "weightAdd": 0
+          }
+        ]
+      },
+      {
+        "id": "weight",
+        "name": "ขนาดบรรจุ",
+        "choices": [
+          {
+            "id": "500g",
+            "label": "500 กรัม",
+            "priceAdd": 0,
+            "weightAdd": 500
+          },
+          {
+            "id": "1000g",
+            "label": "1000 กรัม",
+            "priceAdd": 200,
+            "weightAdd": 1000
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "roasted_arabica",
+    "nameTh": "เมล็ดกาแฟคั่วอาราบิก้า 100%",
+    "nameEn": "Roasted Arabica Coffee",
+    "variety": "Arabica 100%",
+    "groups": [
+      "coffee",
+      "bestseller"
+    ],
+    "weight": 0,
+    "price": 150,
+    "priceOriginal": null,
+    "badge": "คั่วสดใหม่",
+    "badgeType": "",
+    "rating": 4.9,
+    "reviewCount": 340,
+    "sold": 2500,
+    "href": "products/roasted_arabica.html",
+    "emoji": "☕",
+    "imageCover": "assets/images/products/roasted_arabica/00.png",
+    "shortDesc": "เมล็ดกาแฟคั่วสดใหม่ หอมละมุน เลือกได้ 4 ระดับการคั่ว ตอบโจทย์ทุกสไตล์การดื่ม",
+    "tags": [
+      "กาแฟคั่ว",
+      "อาราบิก้า",
+      "คั่วสดใหม่"
+    ],
+    "origin": "ดอยผาแดง",
+    "harvestSeason": "-",
+    "fruitWeight": "-",
+    "skinType": "-",
+    "specificHighlights": [
+      {
+        "icon": "🔥",
+        "text": "คั่วสดใหม่ตามออเดอร์ เพื่อให้ได้กลิ่นและรสชาติที่ดีที่สุด"
+      },
+      {
+        "icon": "🎛️",
+        "text": "มีระดับการคั่วให้เลือก: คั่วอ่อน, กลาง, กลางค่อนเข้ม, เข้ม"
+      },
+      {
+        "icon": "😋",
+        "text": "คั่วอ่อนให้ความเปรี้ยวผลไม้ / คั่วเข้มให้ความเข้มข้นถึงใจ"
+      },
+      {
+        "icon": "📦",
+        "text": "ขนาดคุ้มค่า ตั้งแต่ 100g ไปจนถึง 1kg"
+      }
+    ],
+    "options": [
+      {
+        "id": "roast",
+        "name": "ระดับการคั่ว",
+        "choices": [
+          {
+            "id": "light",
+            "label": "คั่วอ่อน (Light)",
+            "priceAdd": 0,
+            "weightAdd": 0
+          },
+          {
+            "id": "medium",
+            "label": "คั่วกลาง (Medium)",
+            "priceAdd": 0,
+            "weightAdd": 0
+          },
+          {
+            "id": "medium_dark",
+            "label": "คั่วกลางค่อนเข้ม (Medium-Dark)",
+            "priceAdd": 0,
+            "weightAdd": 0
+          },
+          {
+            "id": "dark",
+            "label": "คั่วเข้ม (Dark)",
+            "priceAdd": 0,
+            "weightAdd": 0
+          }
+        ]
+      },
+      {
+        "id": "weight",
+        "name": "ขนาดบรรจุ",
+        "choices": [
+          {
+            "id": "100g",
+            "label": "100 กรัม",
+            "priceAdd": 0,
+            "weightAdd": 100
+          },
+          {
+            "id": "250g",
+            "label": "250 กรัม",
+            "priceAdd": 140,
+            "weightAdd": 250
+          },
+          {
+            "id": "500g",
+            "label": "500 กรัม",
+            "priceAdd": 340,
+            "weightAdd": 500
+          },
+          {
+            "id": "1000g",
+            "label": "1000 กรัม",
+            "priceAdd": 740,
+            "weightAdd": 1000
+          }
+        ]
+      }
+    ]
+  }
+]

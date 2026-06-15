@@ -1,0 +1,29 @@
+[
+  {
+    "code": "YUTTHANA10",
+    "discountType": "percentage",
+    "value": 10,
+    "description": "ลดราคาสินค้า 10%",
+    "startDate": "2020-01-01T00:00:00Z",
+    "endDate": "2030-12-31T23:59:59Z",
+    "applicableGroups": ["all"]
+  },
+  {
+    "code": "AVOCADO50",
+    "discountType": "fixed",
+    "value": 50,
+    "description": "ลดราคาต้นอโวคาโด 50 บาท",
+    "startDate": "2020-01-01T00:00:00Z",
+    "endDate": "2030-12-31T23:59:59Z",
+    "applicableGroups": ["avocado_tree"]
+  },
+  {
+    "code": "EXPIRED100",
+    "discountType": "fixed",
+    "value": 100,
+    "description": "โค้ดหมดอายุแล้ว",
+    "startDate": "2020-01-01T00:00:00Z",
+    "endDate": "2023-12-31T23:59:59Z",
+    "applicableGroups": ["all"]
+  }
+]
