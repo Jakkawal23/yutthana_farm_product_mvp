@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description"
-    content="ยุทธนา ฟาร์ม จำหน่ายต้นอโวคาโดพรีเมียม 13 สายพันธุ์ ทั้งโครงการหลวง พันธุ์ไทย และพันธุ์เวียดนาม ต้นคุณภาพดี ราคาถูก ส่งถึงบ้าน" />
-  <title>ยุทธนา ฟาร์ม | ต้นอโวคาโดพรีเมียม</title>
+    content="ยุทธนาฟาร์ม ดอยผาแดง จำหน่ายสินค้าการเกษตรพรีเมียม ทั้งต้นอโวคาโด กาแฟ และผลผลิตทางการเกษตรคุณภาพสูง ส่งตรงจากไร่ถึงบ้าน" />
+  <title>ยุทธนาฟาร์ม ดอยผาแดง | สินค้าการเกษตรพรีเมียม</title>
   <link rel="stylesheet" href="style.css" />
   <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
@@ -60,16 +60,16 @@
      HERO BANNER
 ════════════════════════════ -->
     <section class="hero-banner" aria-label="โปรโมชั่น">
-      <span class="hero-banner__tag">🌿 ต้นพันธุ์แท้ 100%</span>
-      <h1 class="hero-banner__title">ต้นอโวคาโด จากไร่ยุทธนา<br />คัดเลือกสายพันธุ์ที่ดีที่สุด</h1>
-      <p class="hero-banner__desc">โครงการหลวง · พันธุ์ไทย · พันธุ์เวียดนาม<br />ต้นคุณภาพดี ราคาเข้าถึงได้</p>
+      <span class="hero-banner__tag">🌿 ผลผลิตจากเกษตรกรไทย 100%</span>
+      <h1 class="hero-banner__title">สินค้าการเกษตร จากไร่ยุทธนาฟาร์ม<br />คัดสรรคุณภาพที่ดีที่สุด</h1>
+      <p class="hero-banner__desc">ต้นอโวคาโด · เมล็ดกาแฟ · ผลผลิตทางการเกษตร<br />คุณภาพส่งตรงจากไร่ ราคาเข้าถึงได้</p>
       <a class="hero-banner__cta" href="#product-section" id="btn-hero-cta">
-        เลือกต้นพันธุ์
+        เลือกซื้อสินค้า
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M5 12h14M12 5l7 7-7 7" />
         </svg>
       </a>
-      <div class="hero-banner__emoji" aria-hidden="true">🌿</div>
+      <div class="hero-banner__emoji" aria-hidden="true">⛰️</div>
     </section>
 
     <!-- ══════════════════════════
@@ -86,24 +86,21 @@
     <!-- ══════════════════════════
      CATEGORY FILTER GROUPS
 ════════════════════════════ -->
-    <nav class="category-filter" aria-label="กรองกลุ่มพันธุ์" style="margin-top:16px;">
+    <nav class="category-filter" aria-label="กรองกลุ่มสินค้า" style="margin-top:16px;">
       <button class="category-filter__chip category-filter__chip--active" data-group="all" id="chip-all">
         🌿 ทั้งหมด
       </button>
-      <button class="category-filter__chip" data-group="royal" id="chip-royal">
-        👑 พันธุ์โครงการหลวง
+      <button class="category-filter__chip" data-group="bestseller" id="chip-bestseller">
+        🔥 สินค้าขายดี
       </button>
-      <button class="category-filter__chip" data-group="thai" id="chip-thai">
-        🇹🇭 พันธุ์ไทย
+      <button class="category-filter__chip" data-group="avocado_tree" id="chip-avocado">
+        🥑 ต้นอโวคาโด
       </button>
-      <button class="category-filter__chip" data-group="vietnam" id="chip-vietnam">
-        🇻🇳 พันธุ์เวียดนาม
+      <button class="category-filter__chip" data-group="seedlings" id="chip-seedlings">
+        🌱 ต้นกล้าอื่นๆ
       </button>
-      <button class="category-filter__chip" data-group="easy" id="chip-easy">
-        🌱 พันธุ์ปลูกง่าย
-      </button>
-      <button class="category-filter__chip" data-group="rare" id="chip-rare">
-        💎 พันธุ์หายาก/พิเศษ
+      <button class="category-filter__chip" data-group="coffee" id="chip-coffee">
+        ☕ กาแฟ
       </button>
     </nav>
 
@@ -116,9 +113,9 @@
           <span
             style="width:6px;height:6px;background:var(--color-accent-light);border-radius:50%;display:inline-block;"
             aria-hidden="true"></span>
-          ต้นอโวคาโดทั้งหมด
+          สินค้าทั้งหมด
         </h2>
-        <span class="section__count" id="product-count">13 สายพันธุ์</span>
+        <span class="section__count" id="product-count"></span>
       </div>
       <!-- Active Search Indicator -->
       <div id="search-active-indicator" class="search-active-indicator" style="display: none; margin-bottom: 16px;"></div>

@@ -1,0 +1,20 @@
+[
+  {
+    "code": "FREESHIP",
+    "discountType": "free",
+    "value": 0,
+    "description": "ส่งฟรีทั่วประเทศ",
+    "startDate": "2020-01-01T00:00:00Z",
+    "endDate": "2030-12-31T23:59:59Z",
+    "applicableGroups": ["all"]
+  },
+  {
+    "code": "SHIPDISCOUNT50",
+    "discountType": "discount",
+    "value": 50,
+    "description": "ลดค่าส่ง 50 บาท",
+    "startDate": "2020-01-01T00:00:00Z",
+    "endDate": "2030-12-31T23:59:59Z",
+    "applicableGroups": ["all"]
+  }
+]

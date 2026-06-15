@@ -16,415 +16,33 @@ const LIFF_CONFIG = {
 /* ══════════════════════════════════════════════
    PRODUCT DATA — ข้อมูลต้นอโวคาโดทั้งหมด 13 สายพันธุ์
    ══════════════════════════════════════════════ */
-const PRODUCTS = [
-  /* ─── Group: royal (พันธุ์โครงการหลวง) ─── */
-  {
-    id: 'hass',
-    nameTh: 'ต้นอโวคาโดแฮส',
-    nameEn: 'Hass Avocado Tree',
-    variety: 'Hass',
-    group: 'royal',
-    price: 350,
-    priceOriginal: 420,
-    badge: 'ยอดนิยม',
-    badgeType: '',
-    rating: 4.9,
-    reviewCount: 128,
-    sold: 1240,
-    href: 'products/hass.html',
-    emoji: '🌿',
-    imageCover: 'assets/images/products/hass/00.png',
-    shortDesc: 'ต้นอโวคาโดแฮสเสียบยอด ยอดนิยมอันดับ 1 โตเร็ว ผลดก รสครีมมี่เข้มข้น โครงการหลวงส่งเสริม',
-    tags: ['โครงการหลวง', 'ต้นเสียบยอด', 'โตเร็ว', 'ผลดกยอดนิยม'],
-    origin: 'แคลิฟอร์เนีย สหรัฐอเมริกา',
-    harvestSeason: 'พฤศจิกายน - มกราคม',
-    fruitWeight: '200 - 300 กรัม',
-    skinType: 'ผิวขรุขระ สีเขียวเข้ม (เปลี่ยนเป็นสีม่วงดำเมื่อสุก)',
-    specificHighlights: [
-      { icon: '🌍', text: 'เป็นสายพันธุ์ที่ได้รับความนิยมสูงสุดในโลก รสชาติอร่อยเป็นที่ยอมรับระดับสากล' },
-      { icon: '🥑', text: 'เนื้อสีเหลืองครีม เนื้อละเอียดนุ่ม ไม่มีเส้น รสชาติหวานมันเข้มข้น ไขมันดีสูง' },
-      { icon: '🍽️', text: 'เมล็ดมีขนาดเล็ก ทำให้ได้เนื้ออโวคาโดในสัดส่วนที่มาก คุ้มค่าที่สุด' },
-      { icon: '⛰️', text: 'เหมาะสมกับพื้นที่ปลูกที่สูงระดับ 700 เมตรขึ้นไป ชอบอากาศเย็น' }
-    ]
-  },
-  {
-    id: 'pinkerton',
-    nameTh: 'ต้นอโวคาโดพิงค์เคอร์ตัน',
-    nameEn: 'Pinkerton Avocado Tree',
-    variety: 'Pinkerton',
-    group: 'royal',
-    price: 300,
-    priceOriginal: null,
-    badge: 'ใหม่',
-    badgeType: 'new',
-    rating: 4.7,
-    reviewCount: 86,
-    sold: 432,
-    href: 'products/pinkerton.html',
-    emoji: '🌱',
-    imageCover: 'assets/images/products/pinkerton/00.png',
-    shortDesc: 'ต้นอโวคาโดพิงค์เคอร์ตันเสียบยอด ผลยาว เนื้อเยอะมากเมล็ดเล็ก โครงการหลวงส่งเสริม',
-    tags: ['โครงการหลวง', 'ต้นเสียบยอด', 'ผลยาว', 'เนื้อเยอะ'],
-    origin: 'แคลิฟอร์เนีย สหรัฐอเมริกา',
-    harvestSeason: 'ตุลาคม - ธันวาคม',
-    fruitWeight: '250 - 450 กรัม',
-    skinType: 'ผิวขรุขระเล็กน้อย สีเขียวเข้ม (สีไม่เปลี่ยนเมื่อสุก)',
-    specificHighlights: [
-      { icon: '🍐', text: 'ผลมีลักษณะทรงยาวคล้ายลูกแพร์ ปอกเปลือกง่ายมาก' },
-      { icon: '🥑', text: 'จุดเด่นคือ "เมล็ดเล็กมาก" ทำให้มีปริมาณเนื้อเยอะกว่าพันธุ์อื่นๆ อย่างเห็นได้ชัด' },
-      { icon: '😋', text: 'เนื้อสีเหลืองอ่อน รสชาติมันเนย อร่อยไม่แพ้สายพันธุ์แฮส' },
-      { icon: '🌳', text: 'ต้นมีความแข็งแรง ให้ผลผลิตดกและสม่ำเสมอ' }
-    ]
-  },
-  {
-    id: 'buccanear',
-    nameTh: 'ต้นอโวคาโดบัคคาเนีย',
-    nameEn: 'Buccaneer Avocado Tree',
-    variety: 'Buccaneer',
-    group: 'royal',
-    price: 320,
-    priceOriginal: 380,
-    badge: 'Sale',
-    badgeType: 'sale',
-    rating: 4.8,
-    reviewCount: 54,
-    sold: 318,
-    href: 'products/buccanear.html',
-    emoji: '🌿',
-    imageCover: 'assets/images/products/buccanear/00.png',
-    shortDesc: 'ต้นอโวคาโดบัคคาเนียเสียบยอด สายพันธุ์พรีเมียม รสหวานมัน เนื้อละเอียด โครงการหลวงส่งเสริม',
-    tags: ['โครงการหลวง', 'ต้นเสียบยอด', 'รสหวาน', 'ทนทานโรค'],
-    origin: 'กัวเตมาลา',
-    harvestSeason: 'กันยายน - พฤศจิกายน',
-    fruitWeight: '300 - 500 กรัม',
-    skinType: 'ผิวค่อนข้างเรียบ สีเขียว',
-    specificHighlights: [
-      { icon: '✨', text: 'สายพันธุ์คุณภาพดีที่มูลนิธิโครงการหลวงส่งเสริมให้ปลูก' },
-      { icon: '🥑', text: 'เนื้อสีเหลืองอมเขียว เนื้อละเอียดเนียน รสชาติมันอร่อย' },
-      { icon: '🛡️', text: 'เป็นสายพันธุ์ที่ทนทานต่อโรคและแมลงได้ดี โตไว' },
-      { icon: '⚖️', text: 'ผลมีขนาดกลางถึงใหญ่ ทรงรี น้ำหนักดี' }
-    ]
-  },
-  {
-    id: 'booth7',
-    nameTh: 'ต้นอโวคาโดบูท-7',
-    nameEn: 'Booth 7 Avocado Tree',
-    variety: 'Booth 7',
-    group: 'royal',
-    price: 330,
-    priceOriginal: null,
-    badge: null,
-    badgeType: '',
-    rating: 4.6,
-    reviewCount: 41,
-    sold: 189,
-    href: 'products/booth-7.html',
-    emoji: '🌳',
-    imageCover: 'assets/images/products/booth-7/00.png',
-    shortDesc: 'ต้นอโวคาโดบูท-7เสียบยอด ปลูกง่าย ทนอากาศหนาวและร้อนได้ดี ให้ผลดกช่วงฤดูหนาว',
-    tags: ['โครงการหลวง', 'ต้นเสียบยอด', 'ปลูกง่าย', 'ทนสภาพอากาศ'],
-    origin: 'ฟลอริดา สหรัฐอเมริกา',
-    harvestSeason: 'กันยายน - พฤศจิกายน',
-    fruitWeight: '300 - 500 กรัม',
-    skinType: 'ผิวขรุขระเล็กน้อย สีเขียว (ไม่เปลี่ยนสีเมื่อสุก)',
-    specificHighlights: [
-      { icon: '🎯', text: 'ผลทรงกลมสวยงาม ขนาดกลางถึงใหญ่ เปลือกหนา ทนทานต่อการขนส่ง' },
-      { icon: '🌡️', text: 'ทนทานต่อสภาพอากาศได้ดี ทั้งอากาศร้อนและอากาศเย็น ปลูกง่ายในไทย' },
-      { icon: '😋', text: 'เนื้อสีเหลืองอ่อน รสชาติมันอมหวานเล็กน้อย เนื้อแน่นไม่เละ' },
-      { icon: '🌳', text: 'เป็นสายพันธุ์ที่ให้ผลผลิตดกมาก เหมาะสำหรับปลูกเชิงพาณิชย์' }
-    ]
-  },
-  {
-    id: 'peterson',
-    nameTh: 'ต้นอโวคาโดปีเตอร์สัน',
-    nameEn: 'Peterson Avocado Tree',
-    variety: 'Peterson',
-    group: 'royal',
-    price: 380,
-    priceOriginal: null,
-    badge: null,
-    badgeType: '',
-    rating: 4.9,
-    reviewCount: 33,
-    sold: 97,
-    href: 'products/peterson.html',
-    emoji: '🌴',
-    imageCover: 'assets/images/products/peterson/00.png',
-    shortDesc: 'ต้นอโวคาโดปีเตอร์สันเสียบยอด พันธุ์เบาโตเร็ว ผลใหญ่ รสหวานมันเข้มข้น พรีเมียม',
-    tags: ['โครงการหลวง', 'ต้นเสียบยอด', 'ผลใหญ่', 'พรีเมียม'],
-    origin: 'คิวบา',
-    harvestSeason: 'กรกฎาคม - สิงหาคม',
-    fruitWeight: '250 - 400 กรัม',
-    skinType: 'ผิวเรียบ สีเขียวอมเหลือง',
-    specificHighlights: [
-      { icon: '⏱️', text: 'เป็น "พันธุ์เบา" ที่สามารถเก็บเกี่ยวผลผลิตได้เร็วในช่วงกลางปี' },
-      { icon: '🤤', text: 'รสชาติดีมาก เนื้อละเอียด นุ่มนวล มีรสหวานมันเป็นเอกลักษณ์' },
-      { icon: '🍏', text: 'ผลค่อนข้างกลม ผิวเรียบสวย ปอกง่าย' },
-      { icon: '🏆', text: 'จัดเป็นสายพันธุ์พรีเมียมที่มีราคาสูงและเป็นที่ต้องการของตลาด' }
-    ]
-  },
+let PRODUCTS = [];
+const EASY_GROW_IDS = ['cuba', 'booth7', 'ta21', 'phob-phra-08', 'ordinary_avocado', 'arabica_tree', 'abiu_tree'];
 
-  /* ─── Group: thai (พันธุ์ไทย) ─── */
-  {
-    id: 'phob-phra-08',
-    nameTh: 'ต้นอโวคาโดพบพระ 08',
-    nameEn: 'Phop Phra 08 Avocado Tree',
-    variety: 'Phop Phra 08',
-    group: 'thai',
-    price: 280,
-    priceOriginal: null,
-    badge: 'ท้องถิ่น',
-    badgeType: 'new',
-    rating: 4.5,
-    reviewCount: 22,
-    sold: 145,
-    href: 'products/phob-phra-08.html',
-    emoji: '🌿',
-    imageCover: 'assets/images/products/phob-phra-08/00.png',
-    shortDesc: 'ต้นอโวคาโดพบพระ 08 เสียบยอด คัดเลือกพันธุ์ดีจาก อ.พบพระ ตาก โตไว ทนแล้ง ปลูกง่าย',
-    tags: ['พันธุ์ไทย', 'ต้นเสียบยอด', 'ทนแล้ง', 'ปลูกง่าย'],
-    origin: 'อ.พบพระ จ.ตาก (ประเทศไทย)',
-    harvestSeason: 'พฤษภาคม - ตุลาคม',
-    fruitWeight: '200 - 350 กรัม',
-    skinType: 'ผิวเรียบ สีเขียว',
-    specificHighlights: [
-      { icon: '🇹🇭', text: 'เป็นสายพันธุ์อัตลักษณ์ของ อ.พบพระ จ.ตาก ที่ได้รับการพัฒนาจนนิ่งและเป็นที่ยอมรับ' },
-      { icon: '☀️', text: 'ทนต่อสภาพอากาศร้อนและแล้งได้ดีมาก เติบโตได้ดีในทุกพื้นที่ของประเทศไทย' },
-      { icon: '😋', text: 'เนื้อสัมผัสเหนียว มัน เนียนเป็นพิเศษ ถูกปากคนไทย' },
-      { icon: '📈', text: 'ปลูกง่าย ให้ผลผลิตสูงและรวดเร็ว เป็นที่ต้องการของตลาด' }
-    ]
-  },
-
-  /* ─── Group: vietnam (พันธุ์เวียดนาม) ─── */
-  {
-    id: 'a034',
-    nameTh: 'ต้นอโวคาโด A034',
-    nameEn: 'A034 Avocado Tree',
-    variety: 'A034',
-    group: 'vietnam',
-    price: 260,
-    priceOriginal: null,
-    badge: 'นิยมสูง',
-    badgeType: 'new',
-    rating: 4.7,
-    reviewCount: 94,
-    sold: 867,
-    href: 'products/a034.html',
-    emoji: '🌱',
-    imageCover: 'assets/images/products/a034/00.png',
-    shortDesc: 'ต้นอโวคาโด A034 เสียบยอด พันธุ์เวียดนามสุดฮิต ผลยาวรูปทรงสวย รสมันเนยเข้มข้น',
-    tags: ['พันธุ์เวียดนาม', 'ต้นเสียบยอด', 'ผลยาว', 'รสมันเนย'],
-    origin: 'ดาลัด เวียดนาม',
-    harvestSeason: 'พฤษภาคม - สิงหาคม',
-    fruitWeight: '300 - 800 กรัม',
-    skinType: 'ผิวเรียบมันวาว สีเขียวเข้ม (ไม่เปลี่ยนสี)',
-    specificHighlights: [
-      { icon: '🥒', text: 'รูปทรงผลเรียวยาวเป็นเอกลักษณ์ บางผลอาจยาวถึง 30 ซม. สวยงามแปลกตา' },
-      { icon: '🥑', text: 'เนื้อมีสีเหลืองทอง เนื้อเนียนเหนียว รสชาติหวานมันคล้ายเนย' },
-      { icon: '🍽️', text: 'เมล็ดเล็กมากหรือบางครั้งแทบไม่มีเมล็ด ทำให้มีเปอร์เซ็นต์เนื้อสูงมาก' },
-      { icon: '☀️', text: 'เจริญเติบโตได้ดีในสภาพอากาศร้อนชื้นแบบประเทศไทย โตไว ออกผลดก' }
-    ]
-  },
-  {
-    id: 'ta21',
-    nameTh: 'ต้นอโวคาโด TA21',
-    nameEn: 'TA21 Avocado Tree',
-    variety: 'TA21',
-    group: 'vietnam',
-    price: 290,
-    priceOriginal: 340,
-    badge: 'แนะนำ',
-    badgeType: '',
-    rating: 4.6,
-    reviewCount: 68,
-    sold: 523,
-    href: 'products/ta21.html',
-    emoji: '🌿',
-    imageCover: 'assets/images/products/ta21/00.png',
-    shortDesc: 'ต้นอโวคาโด TA21 เสียบยอด รสชาติดีกลมกล่อมคล้ายแฮส ออกผลดกมาก ทนร้อน',
-    tags: ['พันธุ์เวียดนาม', 'ต้นเสียบยอด', 'ออกผลดก', 'ไขมันดีสูง'],
-    origin: 'เวียดนาม',
-    harvestSeason: 'มิถุนายน - ตุลาคม',
-    fruitWeight: '250 - 400 กรัม',
-    skinType: 'ผิวขรุขระ สีเขียวเข้ม (เปลี่ยนเป็นสีม่วงเมื่อสุก)',
-    specificHighlights: [
-      { icon: '🌟', text: 'สายพันธุ์คุณภาพสูงที่ได้รับสมญานามว่า "แฮสเวียดนาม" ด้วยรสชาติที่ใกล้เคียงมาก' },
-      { icon: '🔥', text: 'มีจุดเด่นเรื่องความทนทานต่ออากาศร้อนได้ดีเยี่ยม เหมาะกับทุกภูมิภาคของไทย' },
-      { icon: '🥑', text: 'เนื้อเนียนละเอียด ไม่มีเส้นใย รสชาติมันเข้มข้น ไขมันดีสูง' },
-      { icon: '🌳', text: 'ให้ผลผลิตดกและให้ผลค่อนข้างเร็ว ถือเป็นพันธุ์เชิงพาณิชย์ที่น่าจับตามอง' }
-    ]
-  },
-  {
-    id: 'cuba',
-    nameTh: 'ต้นอโวคาโดคิวบา',
-    nameEn: 'Cuba Avocado Tree',
-    variety: 'Cuba',
-    group: 'vietnam',
-    price: 250,
-    priceOriginal: null,
-    badge: null,
-    badgeType: '',
-    rating: 4.3,
-    reviewCount: 45,
-    sold: 512,
-    href: 'products/cuba.html',
-    emoji: '🌳',
-    imageCover: 'assets/images/products/cuba/00.png',
-    shortDesc: 'ต้นอโวคาโดคิวบาเสียบยอด ทนร้อนได้ดีเยี่ยม เหมาะสำหรับพื้นที่ราบ โตไวมาก',
-    tags: ['พันธุ์เวียดนาม', 'ต้นเสียบยอด', 'ทนร้อน', 'โตไวมาก'],
-    origin: 'สายพันธุ์ปรับปรุงจากเวียดนาม (ต้นสายจากคิวบา)',
-    harvestSeason: 'มิถุนายน - สิงหาคม',
-    fruitWeight: '300 - 600 กรัม',
-    skinType: 'ผิวเรียบ สีเขียว',
-    specificHighlights: [
-      { icon: '☀️', text: 'เป็นสายพันธุ์ที่ขึ้นชื่อเรื่องการทนร้อนได้ดีที่สุด ปลูกในพื้นที่ราบต่ำได้ผลดี' },
-      { icon: '🚀', text: 'ต้นเจริญเติบโตได้รวดเร็วมาก ให้ร่มเงาไว และเริ่มให้ผลผลิตได้เร็ว' },
-      { icon: '🥑', text: 'เนื้อมีสีเหลืองอ่อน รสชาติมันปานกลาง ทานง่าย' },
-      { icon: '💰', text: 'ให้ผลผลิตต่อต้นสูงมาก ทนทานต่อโรคและแมลง ดูแลง่าย' }
-    ]
-  },
-  {
-    id: 'big',
-    nameTh: 'ต้นอโวคาโดบิ๊ก',
-    nameEn: 'Big Avocado Tree',
-    variety: 'Big',
-    group: 'vietnam',
-    price: 270,
-    priceOriginal: null,
-    badge: null,
-    badgeType: '',
-    rating: 4.4,
-    reviewCount: 38,
-    sold: 289,
-    href: 'products/big.html',
-    emoji: '🌿',
-    imageCover: 'assets/images/products/big/00.png',
-    shortDesc: 'ต้นอโวคาโดบิ๊กเสียบยอด ผลใหญ่พิเศษ เนื้อแน่น รสชาติหวานมัน ทนทานโรคสูง',
-    tags: ['พันธุ์เวียดนาม', 'ต้นเสียบยอด', 'ผลใหญ่', 'แข็งแรง'],
-    origin: 'เวียดนาม',
-    harvestSeason: 'กรกฎาคม - กันยายน',
-    fruitWeight: '500 - 1,000 กรัม',
-    skinType: 'ผิวเรียบ สีเขียวอ่อน',
-    specificHighlights: [
-      { icon: '🐘', text: 'จุดเด่นที่สุดคือขนาดผลที่ "ใหญ่ยักษ์" บางผลมีน้ำหนักถึง 1 กิโลกรัม' },
-      { icon: '🥑', text: 'เนื้อหนาฟู สีเหลืองนวล รสชาติหวานมันกำลังดี ทานสดอร่อย' },
-      { icon: '💪', text: 'ระบบรากแข็งแรงมาก ทนทานต่อโรครากเน่าโคนเน่าได้ดี' },
-      { icon: '🎁', text: 'ด้วยขนาดผลที่ใหญ่มาก จึงเป็นที่นิยมสำหรับซื้อเป็นของฝาก' }
-    ]
-  },
-  {
-    id: 'red-vietnam',
-    nameTh: 'ต้นอโวคาโดเรด เวียดนาม',
-    nameEn: 'Red Vietnam Avocado Tree',
-    variety: 'Red Vietnam',
-    group: 'vietnam',
-    price: 260,
-    priceOriginal: null,
-    badge: null,
-    badgeType: '',
-    rating: 4.5,
-    reviewCount: 52,
-    sold: 334,
-    href: 'products/red-vietnam.html',
-    emoji: '🍂',
-    imageCover: 'assets/images/products/red-vietnam/00.png',
-    shortDesc: 'ต้นอโวคาโดเรดเวียดนามเสียบยอด เปลือกสีแดงม่วงเมื่อสุกสวยงาม เนื้อสีเหลืองเข้มหวานมัน',
-    tags: ['พันธุ์เวียดนาม', 'ต้นเสียบยอด', 'ยอดแดงสวย', 'ออกผลเร็ว'],
-    origin: 'เวียดนาม',
-    harvestSeason: 'พฤษภาคม - สิงหาคม',
-    fruitWeight: '300 - 400 กรัม',
-    skinType: 'ผิวเรียบ สีเขียวอมแดง (เปลี่ยนเป็นแดงม่วงเมื่อสุก)',
-    specificHighlights: [
-      { icon: '🍁', text: 'จุดเด่นคือ "ใบอ่อนและยอดใหม่มีสีแดง" สวยงามแปลกตา ใช้ปลูกประดับสวนได้' },
-      { icon: '⏱️', text: 'จัดเป็น "พันธุ์เบา" ที่โตไวมากและให้ผลผลิตเร็ว (1-2 ปีเริ่มติดผล)' },
-      { icon: '🍒', text: 'ผลสุกมักมีก้านผลและเปลือกอมสีแดง รสชาติมัน เนื้อนุ่มหนึบ' },
-      { icon: '🌱', text: 'ปรับตัวเข้ากับสภาพอากาศร้อนได้ดี ปลูกง่ายในทุกภูมิภาค' }
-    ]
-  },
-
-  /* ─── Group: rare (พันธุ์หายาก/พิเศษ) ─── */
-  {
-    id: 'seedless',
-    nameTh: 'ต้นอโวคาโดไร้เมล็ด',
-    nameEn: 'Seedless Avocado Tree',
-    variety: 'Seedless',
-    group: 'rare',
-    price: 350,
-    priceOriginal: null,
-    badge: 'หายาก',
-    badgeType: 'sale',
-    rating: 4.7,
-    reviewCount: 16,
-    sold: 78,
-    href: 'products/seedless.html',
-    emoji: '✨',
-    imageCover: 'assets/images/products/seedless/00.png',
-    shortDesc: 'ต้นอโวคาโดไร้เมล็ดเสียบยอด พันธุ์แปลกทานง่ายไม่มีเมล็ด หายากเป็นที่ต้องการของตลาด',
-    tags: ['พันธุ์หายาก', 'ต้นเสียบยอด', 'ไม่มีเมล็ด', 'พรีเมียม'],
-    origin: 'สเปน / สายพันธุ์กลายพันธุ์',
-    harvestSeason: 'สิงหาคม - พฤศจิกายน',
-    fruitWeight: '50 - 150 กรัม',
-    skinType: 'ผิวเรียบ สีเขียว (ไม่เปลี่ยนสี)',
-    specificHighlights: [
-      { icon: '🚫', text: 'จุดเด่นที่สุดคือ "ไม่มีเมล็ด" (Cocktail Avocado) สามารถทานได้ทั้งผลอย่างสะดวกสบาย' },
-      { icon: '🥑', text: 'ขนาดผลเล็กกะทัดรัด รูปทรงคล้ายแตงกวาจิ๋ว ทานง่าย พอดีคำ' },
-      { icon: '😋', text: 'เนื้อมีรสชาติมันเข้มข้น เนื้อสัมผัสเนียนละเอียด ไม่มีกากใย' },
-      { icon: '💎', text: 'เป็นสายพันธุ์หายากที่เชฟและภัตตาคารหรูนิยมนำไปทำเมนูพิเศษ' }
-    ]
-  },
-  {
-    id: 'ruhuis',
-    nameTh: 'ต้นอโวคาโดรูเฮิล',
-    nameEn: 'Early Ruehle Avocado Tree',
-    variety: 'Ruehle',
-    group: 'rare',
-    price: 400,
-    priceOriginal: null,
-    badge: 'พิเศษ',
-    badgeType: 'new',
-    rating: 4.8,
-    reviewCount: 11,
-    sold: 43,
-    href: 'products/ruhuis.html',
-    emoji: '💎',
-    imageCover: 'assets/images/products/ruhuis/00.png',
-    shortDesc: 'ต้นอโวคาโดรูเฮิลเสียบยอด พันธุ์เบาเก็บเกี่ยวเร็วมาก รสชาติยอดเยี่ยมเป็นเอกลักษณ์',
-    tags: ['พันธุ์หายาก', 'ต้นเสียบยอด', 'พันธุ์เบา', 'รสชาติพรีเมียม'],
-    origin: 'ฟลอริดา สหรัฐอเมริกา',
-    harvestSeason: 'พฤษภาคม - กรกฎาคม',
-    fruitWeight: '160 - 200 กรัม',
-    skinType: 'ผิวเรียบ สีเขียว (เปลี่ยนเป็นสีม่วงดำเมื่อสุก)',
-    specificHighlights: [
-      { icon: '⚡', text: 'เป็น "พันธุ์เบาพิเศษ" เก็บเกี่ยวผลผลิตได้ก่อนสายพันธุ์อื่นๆ ชิงโอกาสทางการตลาดได้ดี' },
-      { icon: '🥑', text: 'เนื้อสีเหลืองเข้ม รสชาติมัน เหนียว นุ่ม หนึบ อร่อยมาก' },
-      { icon: '🟣', text: 'เมื่อสุกเปลือกจะเปลี่ยนเป็นสีม่วงดำ ทำให้สังเกตความสุกได้ง่าย' },
-      { icon: '🌿', text: 'ต้นแข็งแรง ใบใหญ่หนา ทนทานต่อโรคและแมลงได้ดี' }
-    ]
-  },
-];
-
-/* "ปลูกง่าย" group IDs */
-const EASY_GROW_IDS = ['booth7', 'cuba', 'big', 'a034', 'ta21'];
-
-/* Default shipping cost */
-const DEFAULT_SHIPPING_COST = 150;
 
 /* ══════════════════════════════════════════════
    PROMO & SHIPPING CODE DATA (loaded from JSON)
    ══════════════════════════════════════════════ */
 let promoCodes = [];
 let shippingCodes = [];
+let shippingRates = [];
 
-async function loadCodes() {
+async function loadData() {
   try {
-    const [promoRes, shipRes] = await Promise.all([
-      fetch('promo_codes.json').then(r => r.ok ? r.json() : []),
-      fetch('shipping_codes.json').then(r => r.ok ? r.json() : []),
+    const isSubdir = window.location.pathname.includes('/products/');
+    const basePath = isSubdir ? '../data/' : 'data/';
+    const [promoRes, shipRes, ratesRes, productsRes] = await Promise.all([
+      fetch(basePath + 'promo_codes.json').then(r => r.ok ? r.json() : []),
+      fetch(basePath + 'shipping_codes.json').then(r => r.ok ? r.json() : []),
+      fetch(basePath + 'shipping_rates.json').then(r => r.ok ? r.json() : []),
+      fetch(basePath + 'products.json').then(r => r.ok ? r.json() : [])
     ]);
     promoCodes = promoRes;
     shippingCodes = shipRes;
+    shippingRates = ratesRes;
+    PRODUCTS = productsRes;
   } catch (e) {
-    console.warn('[loadCodes] Could not load codes:', e);
+    console.warn('[loadData] Could not load data:', e);
   }
 }
 
@@ -509,17 +127,22 @@ const Cart = {
 
   add(product, qty = 1) {
     const items = this.getAll();
-    const exists = items.find(i => i.id === product.id);
+    const cartItemId = product.cartItemId || (product.id + (product.selectedOptions ? '_' + JSON.stringify(product.selectedOptions) : ''));
+    const exists = items.find(i => (i.cartItemId || i.id) === cartItemId);
     if (exists) {
       exists.quantity = (exists.quantity || 1) + qty;
     } else {
       items.push({
         id: product.id,
+        cartItemId: cartItemId,
         nameTh: product.nameTh,
         variety: product.variety,
         price: product.price,
         emoji: product.emoji,
         imageCover: product.imageCover,
+        groups: product.groups,
+        weight: product.weight,
+        selectedOptions: product.selectedOptions,
         quantity: qty,
         addedAt: Date.now(),
       });
@@ -529,13 +152,13 @@ const Cart = {
   },
 
   addById(name) {
-    const p = PRODUCTS.find(p => p.nameTh === name || p.nameEn === name);
+    const p = PRODUCTS.find(p => name.includes(p.nameTh) || name.includes(p.nameEn));
     if (p) this.add(p);
   },
 
-  updateQty(id, qty) {
+  updateQty(cartItemId, qty) {
     const items = this.getAll();
-    const item = items.find(i => i.id === id);
+    const item = items.find(i => (i.cartItemId || i.id) === cartItemId);
     if (item) {
       item.quantity = Math.max(1, qty);
       localStorage.setItem(this._key, JSON.stringify(items));
@@ -543,8 +166,8 @@ const Cart = {
     this._updateBadge();
   },
 
-  remove(id) {
-    const items = this.getAll().filter(i => i.id !== id);
+  remove(cartItemId) {
+    const items = this.getAll().filter(i => (i.cartItemId || i.id) !== cartItemId);
     localStorage.setItem(this._key, JSON.stringify(items));
     this._updateBadge();
   },
@@ -577,31 +200,78 @@ const Cart = {
   clearShipping() { localStorage.removeItem(this._shipKey); },
 
   calculateTotals() {
+    const items = this.getAll();
     const subtotal = this.subtotal();
     let discount = 0;
-    const promo = this.getAppliedPromo();
+    
+    // Validate Promo Code
+    let promo = this.getAppliedPromo();
     if (promo) {
-      if (promo.minPurchase && subtotal < promo.minPurchase) {
-        // min not met – don't apply
-      } else if (promo.discountType === 'percentage') {
-        discount = Math.round(subtotal * promo.value / 100);
-      } else if (promo.discountType === 'fixed') {
-        discount = promo.value;
+      if (promo._notFound) {
+        promo._error = 'ไม่พบโค้ดส่วนลดนี้';
+      } else {
+        const now = new Date();
+        const start = new Date(promo.startDate);
+        const end = new Date(promo.endDate);
+        if (now < start || now > end) {
+          promo._error = 'โค้ดส่วนลดนี้ไม่สามารถใช้งานได้ในวันที่นี้';
+        } else if (promo.minPurchase && subtotal < promo.minPurchase) {
+          promo._error = `ยอดขั้นต่ำ ฿${promo.minPurchase.toLocaleString()} เพื่อใช้โค้ดนี้`;
+        }
       }
     }
 
-    let shipping = DEFAULT_SHIPPING_COST;
-    const shipCode = this.getAppliedShipping();
+    // Calculate Promo Discount based on applicable groups
+    if (promo && !promo._error) {
+      const isApplicable = (item) => promo.applicableGroups.includes('all') || promo.applicableGroups.some(g => (item.groups || []).includes(g));
+      
+      const applicableSubtotal = items.reduce((sum, item) => {
+        if (isApplicable(item)) return sum + (item.price * item.quantity);
+        return sum;
+      }, 0);
+
+      if (applicableSubtotal > 0) {
+        if (promo.discountType === 'percentage') {
+          discount = Math.round(applicableSubtotal * promo.value / 100);
+        } else if (promo.discountType === 'fixed') {
+          discount = Math.min(applicableSubtotal, promo.value);
+        }
+      }
+    }
+
+    // Calculate Shipping By Weight
+    const totalWeight = items.reduce((sum, item) => sum + ((item.weight || 0) * item.quantity), 0);
+    const rateTier = shippingRates.find(r => totalWeight >= r.minWeight && totalWeight <= r.maxWeight);
+    let baseShipping = rateTier ? rateTier.rate : 150; // default to 150 if not found
+    if (items.length === 0) baseShipping = 0;
+    
+    let shipping = baseShipping;
+    
+    // Validate Shipping Code
+    let shipCode = this.getAppliedShipping();
     if (shipCode) {
+      if (shipCode._notFound) {
+        shipCode._error = 'ไม่พบโค้ดค่าส่งนี้';
+      } else {
+        const now = new Date();
+        const start = new Date(shipCode.startDate);
+        const end = new Date(shipCode.endDate);
+        if (now < start || now > end) {
+          shipCode._error = 'โค้ดส่วนลดนี้ไม่สามารถใช้งานได้ในวันที่นี้';
+        }
+      }
+    }
+
+    if (shipCode && !shipCode._error) {
       if (shipCode.discountType === 'free') {
         shipping = 0;
       } else if (shipCode.discountType === 'discount') {
-        shipping = Math.max(0, DEFAULT_SHIPPING_COST - shipCode.value);
+        shipping = Math.max(0, baseShipping - shipCode.value);
       }
     }
 
     const total = Math.max(0, subtotal - discount) + shipping;
-    return { subtotal, discount, shipping, total, promo, shipCode };
+    return { subtotal, discount, shipping, total, promo, shipCode, totalWeight };
   },
 
   _updateBadge() {
@@ -714,9 +384,7 @@ let searchQuery = '';
 function getFilteredProducts() {
   return PRODUCTS.filter(p => {
     const matchGroup =
-      currentGroup === 'all' ? true :
-        currentGroup === 'easy' ? EASY_GROW_IDS.includes(p.id) :
-          p.group === currentGroup;
+      currentGroup === 'all' ? true : (p.groups || []).includes(currentGroup);
     const q = searchQuery.toLowerCase();
     const matchSearch = !q ||
       p.nameTh.toLowerCase().includes(q) ||
@@ -775,7 +443,7 @@ function renderProductGrid() {
   const counter = document.getElementById('product-count');
   if (!grid) return;
   const list = getFilteredProducts();
-  if (counter) counter.textContent = `${list.length} สายพันธุ์`;
+  if (counter) counter.textContent = `${list.length} รายการ`;
   grid.innerHTML = list.length
     ? list.map(renderProductCard).join('')
     : `<div class="empty-state" style="grid-column:1/-1">
@@ -894,12 +562,30 @@ function renderCartPanel() {
   }
 
   // Cart items
+  const { subtotal, discount, shipping, total, promo, shipCode, totalWeight } = Cart.calculateTotals();
+  const appliedPromo = promo;
+  const appliedShip = shipCode;
+
   body.innerHTML = items.map(item => {
     const product = PRODUCTS.find(p => p.id === item.id) || item;
     const imgUrl = getRelativePath(product.imageCover || item.imageCover);
     const qty = item.quantity || 1;
+    
+    // Check if promo applies
+    const isApplicable = promo && !promo._error && (promo.applicableGroups.includes('all') || promo.applicableGroups.some(g => (item.groups || []).includes(g)));
+    
+    let priceHtml = `฿${(item.price || 0).toLocaleString()}`;
+    if (isApplicable) {
+       if (promo.discountType === 'percentage') {
+         const discountedPrice = item.price - Math.round(item.price * promo.value / 100);
+         priceHtml = `<s style="color:var(--color-text-light);font-size:0.85em;">฿${item.price.toLocaleString()}</s> <span style="color:var(--color-primary);margin-left:4px;">฿${discountedPrice.toLocaleString()}</span>`;
+       } else {
+         priceHtml += ` <span style="color:var(--color-primary);font-size:0.85em;margin-left:4px;">(ร่วมรายการลด)</span>`;
+       }
+    }
+
     return `
-    <div class="cart-item" id="cart-item-${item.id}">
+    <div class="cart-item" id="cart-item-${item.cartItemId || item.id}">
       <div class="cart-item__img">
         ${imgUrl
           ? `<img src="${imgUrl}" alt="${item.nameTh}" onerror="this.outerHTML='<div class=&quot;cart-item__emoji-fallback&quot;>${item.emoji || '🌿'}</div>'">`
@@ -909,29 +595,29 @@ function renderCartPanel() {
       <div class="cart-item__info">
         <div class="cart-item__name">${item.nameTh}</div>
         <div class="cart-item__variety">${item.variety}</div>
-        <div class="cart-item__price">฿${(item.price || 0).toLocaleString()}</div>
+        <div class="cart-item__price">${priceHtml}</div>
       </div>
       <div class="cart-item__qty-controls">
-        <button class="cart-item__qty-btn" onclick="changeQty('${item.id}', -1)" aria-label="ลดจำนวน">−</button>
+        <button class="cart-item__qty-btn" onclick="changeQty('${item.cartItemId || item.id}', -1)" aria-label="ลดจำนวน">−</button>
         <span class="cart-item__qty-num">${qty}</span>
-        <button class="cart-item__qty-btn" onclick="changeQty('${item.id}', 1)" aria-label="เพิ่มจำนวน">+</button>
+        <button class="cart-item__qty-btn" onclick="changeQty('${item.cartItemId || item.id}', 1)" aria-label="เพิ่มจำนวน">+</button>
       </div>
-      <button class="cart-item__remove" onclick="removeCartItem('${item.id}')" aria-label="ลบออก">✕</button>
+      <button class="cart-item__remove" onclick="removeCartItem('${item.cartItemId || item.id}')" aria-label="ลบออก">✕</button>
     </div>`;
   }).join('');
 
   // Promo & Shipping code section
-  const appliedPromo = Cart.getAppliedPromo();
-  const appliedShip = Cart.getAppliedShipping();
+  const currentAppliedPromo = Cart.getAppliedPromo();
+  const currentAppliedShip = Cart.getAppliedShipping();
 
   body.innerHTML += `
     <div class="cart-codes-section">
       <div class="cart-code-row">
         <label class="cart-code-label">🏷️ โค้ดส่วนลดสินค้า</label>
-        ${appliedPromo
-          ? `<div class="cart-code-applied">
-               <span class="cart-code-applied__tag">✅ ${appliedPromo.code}</span>
-               <span class="cart-code-applied__desc">${appliedPromo.description}</span>
+        ${currentAppliedPromo
+          ? `<div class="cart-code-applied ${currentAppliedPromo._error ? 'cart-code-applied--error' : ''}" style="${currentAppliedPromo._error ? 'border-color: #e74c3c; background-color: #fdf2f2;' : ''}">
+               <span class="cart-code-applied__tag">${currentAppliedPromo._error ? '❌' : '✅'} ${currentAppliedPromo.code}</span>
+               <span class="cart-code-applied__desc" style="${currentAppliedPromo._error ? 'color: #e74c3c;' : ''}">${currentAppliedPromo._error || currentAppliedPromo.description}</span>
                <button class="cart-code-applied__remove" onclick="removePromoCode()">✕</button>
              </div>`
           : `<div class="cart-code-input-row">
@@ -942,10 +628,10 @@ function renderCartPanel() {
       </div>
       <div class="cart-code-row">
         <label class="cart-code-label">🚚 โค้ดส่วนลดค่าส่ง</label>
-        ${appliedShip
-          ? `<div class="cart-code-applied">
-               <span class="cart-code-applied__tag">✅ ${appliedShip.code}</span>
-               <span class="cart-code-applied__desc">${appliedShip.description}</span>
+        ${currentAppliedShip
+          ? `<div class="cart-code-applied ${currentAppliedShip._error ? 'cart-code-applied--error' : ''}" style="${currentAppliedShip._error ? 'border-color: #e74c3c; background-color: #fdf2f2;' : ''}">
+               <span class="cart-code-applied__tag">${currentAppliedShip._error ? '❌' : '✅'} ${currentAppliedShip.code}</span>
+               <span class="cart-code-applied__desc" style="${currentAppliedShip._error ? 'color: #e74c3c;' : ''}">${currentAppliedShip._error || currentAppliedShip.description}</span>
                <button class="cart-code-applied__remove" onclick="removeShippingCode()">✕</button>
              </div>`
           : `<div class="cart-code-input-row">
@@ -980,7 +666,6 @@ function renderCartPanel() {
 
   // Footer totals
   if (footer) {
-    const { subtotal, discount, shipping, total, promo, shipCode } = Cart.calculateTotals();
     footer.innerHTML = `
       <div class="cart-summary">
         <div class="cart-summary__row">
@@ -1010,21 +695,21 @@ function renderCartPanel() {
 }
 
 /* ── Cart actions (global) ── */
-window.changeQty = function(id, delta) {
+window.changeQty = function(cartItemId, delta) {
   const items = Cart.getAll();
-  const item = items.find(i => i.id === id);
+  const item = items.find(i => (i.cartItemId || i.id) === cartItemId);
   if (!item) return;
   const newQty = (item.quantity || 1) + delta;
   if (newQty < 1) {
-    removeCartItem(id);
+    removeCartItem(cartItemId);
     return;
   }
-  Cart.updateQty(id, newQty);
+  Cart.updateQty(cartItemId, newQty);
   renderCartPanel();
 };
 
-window.removeCartItem = function(id) {
-  Cart.remove(id);
+window.removeCartItem = function(cartItemId) {
+  Cart.remove(cartItemId);
   renderCartPanel();
   showToast('🗑️ ลบออกจากตะกร้าแล้ว', 2000);
 };
@@ -1039,16 +724,15 @@ window.applyPromoCode = function() {
   const input = document.getElementById('promo-code-input');
   if (!input) return;
   const code = input.value.trim().toUpperCase();
-  if (!code) { showToast('⚠️ กรุณากรอกโค้ดส่วนลด'); return; }
-  const found = promoCodes.find(c => c.code === code);
-  if (!found) { showToast('❌ ไม่พบโค้ดส่วนลดนี้'); return; }
-  if (found.minPurchase && Cart.subtotal() < found.minPurchase) {
-    showToast(`⚠️ ยอดขั้นต่ำ ฿${found.minPurchase.toLocaleString()} เพื่อใช้โค้ดนี้`);
-    return;
+  if (!code) return;
+  
+  let found = promoCodes.find(c => c.code === code);
+  if (!found) { 
+    found = { code, description: 'ไม่พบโค้ดส่วนลดนี้', _notFound: true };
   }
+  
   Cart.setAppliedPromo(found);
   renderCartPanel();
-  showToast(`✅ ใช้โค้ด ${found.code} สำเร็จ! ${found.description}`);
 };
 
 window.removePromoCode = function() {
@@ -1061,12 +745,15 @@ window.applyShippingCode = function() {
   const input = document.getElementById('ship-code-input');
   if (!input) return;
   const code = input.value.trim().toUpperCase();
-  if (!code) { showToast('⚠️ กรุณากรอกโค้ดค่าส่ง'); return; }
-  const found = shippingCodes.find(c => c.code === code);
-  if (!found) { showToast('❌ ไม่พบโค้ดค่าส่งนี้'); return; }
+  if (!code) return;
+  
+  let found = shippingCodes.find(c => c.code === code);
+  if (!found) { 
+    found = { code, description: 'ไม่พบโค้ดค่าส่งนี้', _notFound: true };
+  }
+  
   Cart.setAppliedShipping(found);
   renderCartPanel();
-  showToast(`✅ ใช้โค้ด ${found.code} สำเร็จ! ${found.description}`);
 };
 
 window.removeShippingCode = function() {
@@ -1640,9 +1327,9 @@ window.contactAdmin = async function(subject) {
 /* ══════════════════════════════════════════════
    DOM READY
    ══════════════════════════════════════════════ */
-document.addEventListener('DOMContentLoaded', () => {
-  // ── Load promo/shipping codes JSON data ──
-  loadCodes();
+document.addEventListener('DOMContentLoaded', async () => {
+  // ── Load promo/shipping codes & products JSON data ──
+  await loadData();
 
   // ── Init cart badge ──
   Cart.init();
@@ -1690,6 +1377,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (isProductDetailPage) {
     const parts = window.location.pathname.split('/');
     const filename = parts[parts.length - 1]; // e.g. "hass.html"
+
     const id = filename.replace('.html', '');
     const normalizedId = id === 'booth-7' ? 'booth7' : id;
     const product = PRODUCTS.find(p => p.id === normalizedId);
