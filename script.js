@@ -87,6 +87,48 @@ async function initLiff() {
   }
 }
 
+async function sendMessageToLine(msgText) {
+  try {
+    const ok = await initLiff();
+    if (!ok) throw new Error('LIFF init failed');
+
+    // Only login if outside the LINE app. Inside, it's automatic.
+    if (!liff.isLoggedIn()) {
+      if (!liff.isInClient()) {
+        liff.login();
+        return 'logging_in';
+      }
+    }
+
+    const context = liff.getContext();
+    // 1. If in a chat context (utou, group, room), try to sendMessages directly
+    if (context && context.type !== 'none') {
+      await liff.sendMessages([{ type: 'text', text: msgText }]);
+      return 'sent';
+    }
+
+    // 2. Fallback to shareTargetPicker if available
+    if (liff.isApiAvailable('shareTargetPicker')) {
+      const res = await liff.shareTargetPicker([{ type: 'text', text: msgText }]);
+      if (res) {
+        return 'shared';
+      }
+    }
+
+    throw new Error('Not in chat context and shareTargetPicker not completed');
+  } catch (err) {
+    console.warn('[LINE Send Failed, using fallback]', err);
+    // 3. Fallback to Clipboard copy + redirect to LINE OA
+    try {
+      await navigator.clipboard.writeText(msgText);
+      return 'copied';
+    } catch (clipErr) {
+      console.error('Clipboard copy failed:', clipErr);
+      return 'failed';
+    }
+  }
+}
+
 /* ══════════════════════════════════════════════
    sendInterest(product) — ส่งข้อความ + เพิ่มตะกร้า
    ══════════════════════════════════════════════ */
@@ -99,27 +141,32 @@ async function sendInterest(productOrName) {
   if (btn) { btn.disabled = true; btn.textContent = '⏳ กำลังส่ง...'; }
 
   try {
-    const ok = await initLiff();
-    if (!ok) throw new Error('LIFF init failed');
-
-    if (!liff.isLoggedIn()) {
-      sessionStorage.setItem('pendingProduct', JSON.stringify(productOrName));
-      liff.login();
-      return;
-    }
-
     const msg = `🌿 สนใจสั่งซื้อต้นไม้: ${productName}${product ? `\n💰 ราคา: ฿${product.price.toLocaleString()}/ต้น` : ''}\n\nกรุณาติดต่อแอดมินเพื่อสั่งซื้อ 😊`;
-    await liff.sendMessages([{ type: 'text', text: msg }]);
 
     if (product) Cart.add(product);
     else Cart.addById(productName);
 
-    showToast('✅ ส่งข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
-    if (liff.isInClient()) setTimeout(() => liff.closeWindow(), 1800);
+    const result = await sendMessageToLine(msg);
+    if (result === 'sent') {
+      showToast('✅ ส่งข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
+      if (liff.isInClient()) setTimeout(() => liff.closeWindow(), 1800);
+    } else if (result === 'shared') {
+      showToast('✅ แชร์ข้อความสำเร็จ! เพิ่มในตะกร้าแล้ว');
+    } else if (result === 'copied') {
+      showToast('📋 คัดลอกแล้ว กำลังเปิดแชท LINE แอดมิน...');
+      const oaLink = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_OA_LINK : 'https://line.me/R/ti/p/@yutthanafarm';
+      setTimeout(() => {
+        liff.openWindow({ url: oaLink, external: false });
+      }, 1500);
+    } else if (result === 'logging_in') {
+      // Waiting for login redirect
+    } else {
+      const lineName = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_NAME : 'Yutthana Farm';
+      showToast(`🛒 เพิ่มในตะกร้าแล้ว (กรุณาติดต่อ LINE: ${lineName})`);
+    }
 
   } catch (err) {
     console.error('[sendInterest]', err);
-    if (product) Cart.add(product);
     showToast('🛒 เพิ่มในตะกร้าแล้ว (กรุณาติดต่อแอดมินโดยตรง)');
   } finally {
     if (btn) {
@@ -815,25 +862,34 @@ window.sendCheckoutMessage = async function () {
   msg += `\nกรุณาตอบกลับเพื่อยืนยันการสั่งซื้อ 😊`;
 
   try {
-    const ok = await initLiff();
-    if (ok && liff.isLoggedIn()) {
-      await liff.sendMessages([{ type: 'text', text: msg }]);
+    const result = await sendMessageToLine(msg);
+    if (result === 'sent') {
       showToast('✅ ส่งรายการสั่งซื้อสำเร็จ!');
       Cart.clear();
       renderCartPanel();
       if (liff.isInClient()) setTimeout(() => liff.closeWindow(), 2000);
+    } else if (result === 'shared') {
+      showToast('✅ แชร์รายการสั่งซื้อสำเร็จ!');
+      Cart.clear();
+      renderCartPanel();
+    } else if (result === 'copied') {
+      showToast('📋 คัดลอกแล้ว กำลังเปิดแชท LINE แอดมิน...');
+      Cart.clear();
+      renderCartPanel();
+      const oaLink = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_OA_LINK : 'https://line.me/R/ti/p/@yutthanafarm';
+      setTimeout(() => {
+        liff.openWindow({ url: oaLink, external: false });
+      }, 1500);
+    } else if (result === 'logging_in') {
+      // Waiting for login redirect
     } else {
-      // Fallback: copy to clipboard
-      try {
-        await navigator.clipboard.writeText(msg);
-        showToast('📋 คัดลอกรายการสั่งซื้อแล้ว ส่งให้แอดมินผ่าน LINE ได้เลย');
-      } catch {
-        showToast('📞 กรุณาติดต่อ LINE: @yutthanafarm');
-      }
+      const lineName = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_NAME : 'Yutthana Farm';
+      showToast(`📞 กรุณาติดต่อ LINE: ${lineName}`);
     }
   } catch (err) {
     console.error('[checkout]', err);
-    showToast('📞 กรุณาติดต่อ LINE: @yutthanafarm');
+    const lineName = typeof window.CONFIG !== 'undefined' ? window.CONFIG.LINE_NAME : 'Yutthana Farm';
+    showToast(`📞 กรุณาติดต่อ LINE: ${lineName}`);
   }
 };
 
@@ -1031,7 +1087,7 @@ function renderProfilePanel() {
         <div class="profile-menu-item__icon">📞</div>
         <div class="profile-menu-item__text">
           <div class="profile-menu-item__title">ติดต่อแอดมิน</div>
-          <div class="profile-menu-item__desc">LINE: @yutthanafarm</div>
+          <div class="profile-menu-item__desc">LINE: Yutthana Farm</div>
         </div>
         <span class="profile-menu-item__arrow">›</span>
       </div>
