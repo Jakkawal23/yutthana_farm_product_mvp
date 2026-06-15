@@ -6,6 +6,32 @@ const LIFF_CONFIG = {
   liffId: "YOUR_LIFF_ID_HERE",
 };
 
+async function loadEnv() {
+  try {
+    const isSubdir = window.location.pathname.includes('/products/');
+    const envPath = isSubdir ? '../.env' : '.env';
+    const res = await fetch(envPath);
+    if (res.ok) {
+      const text = await res.text();
+      const env = {};
+      text.split('\n').forEach(line => {
+        const parts = line.split('=');
+        if (parts.length >= 2) {
+          const key = parts[0].trim();
+          const value = parts.slice(1).join('=').trim().replace(/^["']|["']$/g, '');
+          env[key] = value;
+        }
+      });
+      if (env.LIFF_ID) {
+        LIFF_CONFIG.liffId = env.LIFF_ID;
+      }
+    }
+  } catch (e) {
+    console.warn('Could not load .env file:', e);
+  }
+}
+
+
 let PRODUCTS = [];
 const EASY_GROW_IDS = ['cuba', 'booth7', 'ta21', 'phob-phra-08', 'ordinary_avocado', 'arabica_tree', 'abiu_tree'];
 
@@ -566,6 +592,7 @@ window.contactAdmin = async function (subject) {
 };
 
 document.addEventListener('DOMContentLoaded', async () => {
+  await loadEnv();
   await loadData();
   Cart.init();
 
