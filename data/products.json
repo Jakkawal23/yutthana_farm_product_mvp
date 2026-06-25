@@ -9,8 +9,8 @@
       "bestseller"
     ],
     "weight": 1500,
-    "price": 350,
-    "priceOriginal": 420,
+    "price": 115,
+    "priceOriginal": 200,
     "badge": "ยอดนิยม / โครงการหลวง",
     "badgeType": "",
     "rating": 4.9,
@@ -58,8 +58,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 300,
-    "priceOriginal": null,
+    "price": 115,
+    "priceOriginal": 200,
     "badge": "ใหม่ / โครงการหลวง",
     "badgeType": "new",
     "rating": 4.7,
@@ -107,8 +107,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 320,
-    "priceOriginal": 380,
+    "price": 115,
+    "priceOriginal": 200,
     "badge": "Sale",
     "badgeType": "sale",
     "rating": 4.8,
@@ -156,8 +156,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 330,
-    "priceOriginal": null,
+    "price": 115,
+    "priceOriginal": 200,
     "badge": "ปลูกง่าย",
     "badgeType": "",
     "rating": 4.6,
@@ -205,8 +205,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 380,
-    "priceOriginal": null,
+    "price": 115,
+    "priceOriginal": 200,
     "badge": "โครงการหลวง",
     "badgeType": "",
     "rating": 4.9,
@@ -254,8 +254,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 280,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "พันธุ์ไทย / ท้องถิ่น",
     "badgeType": "new",
     "rating": 4.5,
@@ -304,8 +304,8 @@
       "bestseller"
     ],
     "weight": 1500,
-    "price": 260,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "นิยมสูง / พันธุ์เวียดนาม",
     "badgeType": "new",
     "rating": 4.7,
@@ -353,8 +353,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 290,
-    "priceOriginal": 340,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "แนะนำ / ปลูกง่าย",
     "badgeType": "",
     "rating": 4.6,
@@ -402,8 +402,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 250,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "ทนร้อน / ปลูกง่าย",
     "badgeType": "",
     "rating": 4.3,
@@ -451,8 +451,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 270,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "ผลใหญ่พิเศษ",
     "badgeType": "",
     "rating": 4.4,
@@ -500,8 +500,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 260,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "พันธุ์เวียดนาม",
     "badgeType": "",
     "rating": 4.5,
@@ -549,8 +549,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 350,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "หายาก",
     "badgeType": "sale",
     "rating": 4.7,
@@ -598,8 +598,8 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 400,
-    "priceOriginal": null,
+    "price": 159,
+    "priceOriginal": 250,
     "badge": "พันธุ์เบา / หายาก",
     "badgeType": "new",
     "rating": 4.8,
@@ -647,7 +647,7 @@
       "avocado_tree"
     ],
     "weight": 1500,
-    "price": 150,
+    "price": 60,
     "priceOriginal": null,
     "badge": "พันธุ์พื้นเมือง",
     "badgeType": "",
@@ -695,7 +695,7 @@
       "seedlings"
     ],
     "weight": 1500,
-    "price": 60,
+    "price": 45,
     "priceOriginal": null,
     "badge": "ยอดนิยม",
     "badgeType": "",
@@ -743,7 +743,7 @@
       "seedlings"
     ],
     "weight": 1500,
-    "price": 250,
+    "price": 125,
     "priceOriginal": null,
     "badge": "ผลไม้แปลก",
     "badgeType": "new",
@@ -792,8 +792,8 @@
       "bestseller"
     ],
     "weight": 150,
-    "price": 250,
-    "priceOriginal": 300,
+    "price": 15,
+    "priceOriginal": null,
     "badge": "พรีเมียม",
     "badgeType": "sale",
     "rating": 4.9,
@@ -840,7 +840,7 @@
       "coffee"
     ],
     "weight": 0,
-    "price": 150,
+    "price": 64,
     "priceOriginal": null,
     "badge": "",
     "badgeType": "",
@@ -891,13 +891,13 @@
           {
             "id": "10_sachets",
             "label": "10 ซอง",
-            "priceAdd": 100,
+            "priceAdd": 55,
             "weightAdd": 100
           },
           {
             "id": "15_sachets",
             "label": "15 ซอง",
-            "priceAdd": 180,
+            "priceAdd": 95,
             "weightAdd": 150
           }
         ]
@@ -913,7 +913,7 @@
       "coffee"
     ],
     "weight": 0,
-    "price": 200,
+    "price": 165,
     "priceOriginal": null,
     "badge": "สำหรับโรงคั่ว",
     "badgeType": "",
@@ -965,7 +965,7 @@
           {
             "id": "1000g",
             "label": "1000 กรัม",
-            "priceAdd": 180,
+            "priceAdd": 135,
             "weightAdd": 1000
           }
         ]
@@ -981,7 +981,7 @@
       "coffee"
     ],
     "weight": 0,
-    "price": 250,
+    "price": 205,
     "priceOriginal": null,
     "badge": "เมล็ดดิบ",
     "badgeType": "",
@@ -1051,7 +1051,7 @@
           {
             "id": "1000g",
             "label": "1000 กรัม",
-            "priceAdd": 200,
+            "priceAdd": 190,
             "weightAdd": 1000
           }
         ]
@@ -1068,7 +1068,7 @@
       "bestseller"
     ],
     "weight": 0,
-    "price": 150,
+    "price": 105,
     "priceOriginal": null,
     "badge": "คั่วสดใหม่",
     "badgeType": "",
@@ -1150,19 +1150,19 @@
           {
             "id": "250g",
             "label": "250 กรัม",
-            "priceAdd": 140,
+            "priceAdd": 45,
             "weightAdd": 250
           },
           {
             "id": "500g",
             "label": "500 กรัม",
-            "priceAdd": 340,
+            "priceAdd": 165,
             "weightAdd": 500
           },
           {
             "id": "1000g",
             "label": "1000 กรัม",
-            "priceAdd": 740,
+            "priceAdd": 410,
             "weightAdd": 1000
           }
         ]
