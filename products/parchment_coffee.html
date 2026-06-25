@@ -89,7 +89,7 @@
 
         <div class="price-box" role="group" aria-label="ราคาสินค้า">
             <div>
-                <div class="price-box__price" id="display-price">฿200</div>
+                <div class="price-box__price" id="display-price">฿165</div>
                 <div class="price-box__unit">ต่อถุง</div>
             </div>
         </div>
@@ -99,7 +99,7 @@
             <div class="option-group__title">ขนาดบรรจุ</div>
             <div class="option-chips" id="options-weight">
                 <div class="option-chip active" data-val="500g" data-price="0">500 กรัม</div>
-                <div class="option-chip" data-val="1000g" data-price="180">1000 กรัม (+฿180)</div>
+                <div class="option-chip" data-val="1000g" data-price="135">1000 กรัม (+฿135)</div>
             </div>
         </div>
 
@@ -148,13 +148,13 @@
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                 <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
             </svg>
-            สนใจสั่งซื้อ (<span id="btn-order-price">฿200</span>)
+            สนใจสั่งซื้อ (<span id="btn-order-price">฿165</span>)
         </button>
     </div>
 
     <script src="product-script.js"></script>
     <script>
-        const basePrice = 200;
+        const basePrice = 165;
         let selectedWeight = '500g';
 
         document.querySelectorAll('#options-weight .option-chip').forEach(chip => {
